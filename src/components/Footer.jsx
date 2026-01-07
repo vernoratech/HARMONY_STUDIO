@@ -137,9 +137,22 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="border-t border-white/5">
                 <div className="container-custom !py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-sm text-gray-400">
-                        © {currentYear} Harmony Studio. All rights reserved.
-                    </p>
+                    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+                        <p className="text-sm text-gray-400">
+                            © {currentYear} Harmony Studio. All rights reserved.
+                        </p>
+                        <span className="hidden md:block text-gray-700">|</span>
+                        <p className="text-xs text-gray-500 font-medium tracking-wide">
+                            Website made by <a
+                                href="https://www.linkedin.com/company/vernoratech/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-[#F5A623] transition-all duration-300 font-bold hover:scale-105 inline-block !ml-1"
+                            >
+                                VernoraTech
+                            </a>
+                        </p>
+                    </div>
                     <div className="flex gap-6 text-sm text-gray-400">
                         <a href="#" className="hover:text-[#F5A623] transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-[#F5A623] transition-colors">Terms of Service</a>

@@ -111,7 +111,7 @@ const HomePage = () => {
             </section>
 
             {/* ===== WHY CHOOSE US ===== */}
-            <section className="section-padding bg-white">
+            <section className="section-padding bg-gray-300">
                 <div className="container-custom">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         {/* Image Grid */}
