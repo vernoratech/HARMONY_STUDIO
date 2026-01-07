@@ -7,7 +7,7 @@ export const SERVICES = [
         tagline: 'Express Your Soul',
         description: 'Express yourself through movement. From contemporary to classical, find your rhythm and let your body tell its story. Our dance programs are designed to build confidence, coordination, and creative expression.',
         image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=1200',
-        heroImage: 'https://images.unsplash.com/photo-1547153760-18fc9e4d8887?auto=format&fit=crop&q=80&w=2000',
+        heroImage: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=1200',
         features: ['Modern Jazz', 'Contemporary', 'Bollywood Beats', 'Kids Dance', 'Hip Hop', 'Classical Fusion'],
         color: '#e386a5',
 
@@ -51,7 +51,7 @@ export const SERVICES = [
         tagline: 'Find Inner Peace',
         description: 'Connect with your inner peace through traditional Hatha, flowing Vinyasa, and restorative practices. Our experienced instructors guide you towards balance, flexibility, and mental clarity.',
         image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200',
-        heroImage: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=2000',
+        heroImage: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200',
         features: ['Hatha Yoga', 'Vinyasa Flow', 'Pranayama', 'Meditation', 'Power Yoga', 'Restorative'],
         color: '#4CAF50',
 
