@@ -4,10 +4,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 import SchedulePage from './pages/SchedulePage';
 import AboutPage from './pages/AboutPage';
 import PricingPage from './pages/PricingPage';
 import ContactPage from './pages/ContactPage';
+import GalleryPage from './pages/GalleryPage';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -40,10 +42,12 @@ function App() {
           <Routes>
             <Route path="/" element={<PageWrapper><HomePage /></PageWrapper>} />
             <Route path="/services" element={<PageWrapper><ServicesPage /></PageWrapper>} />
+            <Route path="/services/:type" element={<PageWrapper><ServiceDetailPage /></PageWrapper>} />
             <Route path="/schedule" element={<PageWrapper><SchedulePage /></PageWrapper>} />
             <Route path="/about" element={<PageWrapper><AboutPage /></PageWrapper>} />
             <Route path="/pricing" element={<PageWrapper><PricingPage /></PageWrapper>} />
             <Route path="/contact" element={<PageWrapper><ContactPage /></PageWrapper>} />
+            <Route path="/gallery" element={<PageWrapper><GalleryPage /></PageWrapper>} />
           </Routes>
         </main>
 

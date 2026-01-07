@@ -105,15 +105,15 @@ const ServicesPage = () => {
                                     {/* CTAs */}
                                     <div className="flex flex-wrap gap-4">
                                         <Link
-                                            to="/schedule"
+                                            to={`/services/${service.slug}`}
                                             className="inline-flex items-center !px-8 !py-3 rounded-full font-bold transition-all"
                                             style={{ backgroundColor: service.color, color: '#000' }}
                                         >
-                                            View Schedule
+                                            Learn More
                                             <ArrowRight size={18} className="!ml-2" />
                                         </Link>
                                         <Link
-                                            to="/pricing"
+                                            to="/contact"
                                             className="inline-flex items-center !px-8 !py-3 rounded-full font-bold border-2 text-white hover:bg-white hover:text-black transition-all"
                                             style={{ borderColor: service.color }}
                                         >
