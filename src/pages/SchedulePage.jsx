@@ -122,9 +122,9 @@ const SchedulePage = () => {
                                             </div>
 
                                             {/* Register Button */}
-                                            <button className="!px-6 !py-2.5 bg-white/5 text-white border border-white/10 rounded-full font-semibold text-sm hover:bg-[#F5A623] hover:text-black hover:border-[#F5A623] transition-all flex items-center justify-center group/btn">
+                                            <button className="!px-6 !py-2.5 bg-white/5 text-white border border-white/10 rounded-full font-semibold text-sm hover:bg-[#F5A623] hover:text-black hover:border-[#F5A623] transition-all flex items-center justify-center group/btn gap-2">
                                                 Register
-                                                <ArrowRight size={16} className="!ml-2 opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all" />
+                                                <ArrowRight size={16} className="!ml-2 -translate-x-2 group-hover/btn:translate-x-0 transition-all" />
                                             </button>
                                         </div>
                                     </div>
