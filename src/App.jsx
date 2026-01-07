@@ -12,6 +12,7 @@ import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
 import NotFoundPage from './pages/NotFoundPage';
 import InstructorDetailPage from './pages/InstructorDetailPage';
+import CookieConsent from './components/ui/CookieConsent';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -58,6 +59,7 @@ function App() {
         </main>
 
         <Footer />
+        <CookieConsent />
       </div>
     </Router>
   );
