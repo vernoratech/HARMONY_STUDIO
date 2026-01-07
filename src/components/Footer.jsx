@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
-import { NAV_LINKS, CONTACT_INFO } from '../data';
+import { FOOTER_LINKS, CONTACT_INFO } from '../data';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -10,10 +10,10 @@ const Footer = () => {
         <footer className="bg-gradient-to-b from-[#0A0A0A] to-black text-gray-400 relative overflow-hidden">
             {/* Decorative Elements */}
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#F5A623]/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F5A623]/5 rounded-full blur-3xl" />
+            {/* <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F5A623]/5 rounded-full blur-3xl" /> */}
 
             {/* Main Footer Content */}
-            <div className="container-custom !py-20 relative z-10">
+            <div className="container-custom !pt-20 !pb-8 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
                     {/* Brand Column */}
                     <div className="lg:col-span-1">
@@ -68,7 +68,7 @@ const Footer = () => {
                             Quick Links
                         </h4>
                         <ul className="space-y-4">
-                            {NAV_LINKS.map((link) => (
+                            {FOOTER_LINKS.map((link) => (
                                 <li key={link.path}>
                                     <Link
                                         to={link.path}
@@ -137,10 +137,10 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="border-t border-white/5">
                 <div className="container-custom !py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-gray-600">
+                    <p className="text-sm text-gray-400">
                         © {currentYear} Harmony Studio. All rights reserved.
                     </p>
-                    <div className="flex gap-6 text-xs text-gray-600">
+                    <div className="flex gap-6 text-sm text-gray-400">
                         <a href="#" className="hover:text-[#F5A623] transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-[#F5A623] transition-colors">Terms of Service</a>
                         <a href="#" className="hover:text-[#F5A623] transition-colors">Cookie Policy</a>

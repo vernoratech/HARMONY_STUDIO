@@ -283,6 +283,17 @@ export const NAV_LINKS = [
     { name: 'Contact', path: '/contact' }
 ];
 
+// Footer Links
+export const FOOTER_LINKS = [
+    // { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    // { name: 'Schedule', path: '/schedule' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'About', path: '/about' },
+    { name: 'Pricing', path: '/pricing' },
+    { name: 'Contact', path: '/contact' }
+];
+
 // Contact Info
 export const CONTACT_INFO = {
     address: '123 Wellness Boulevard, Suite 100, Mumbai 400001',
