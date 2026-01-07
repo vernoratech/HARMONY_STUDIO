@@ -11,6 +11,7 @@ import PricingPage from './pages/PricingPage';
 import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
 import NotFoundPage from './pages/NotFoundPage';
+import InstructorDetailPage from './pages/InstructorDetailPage';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -49,6 +50,7 @@ function App() {
             <Route path="/pricing" element={<PageWrapper><PricingPage /></PageWrapper>} />
             <Route path="/contact" element={<PageWrapper><ContactPage /></PageWrapper>} />
             <Route path="/gallery" element={<PageWrapper><GalleryPage /></PageWrapper>} />
+            <Route path="/instructors/:name" element={<PageWrapper><InstructorDetailPage /></PageWrapper>} />
 
             {/* 404 Catch-all - Must be last */}
             <Route path="*" element={<NotFoundPage />} />

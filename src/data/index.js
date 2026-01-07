@@ -137,63 +137,93 @@ export const SERVICES = [
 // Instructors Data
 export const INSTRUCTORS = [
     {
+        id: 'priya-sharma',
+        slug: 'priya-sharma',
         name: 'Priya Sharma',
         role: 'Head of Yoga',
         bio: '15 years of experience in traditional yoga practices. Certified in Hatha and Vinyasa.',
-        image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&q=80&w=600'
+        fullBio: 'Priya Shara is a dedicated yoga practitioner with over 15 years of experience. Her journey began in the Himalayas, where she studied under renowned masters. Today, she brings that ancient wisdom to Harmony Studio, helping students find their inner focus and physical balance. Her classes are known for their blend of challenging sequences and restorative mindfulness.',
+        image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&q=80&w=600',
+        specialties: ['Hatha Yoga', 'Vinyasa Flow', 'Meditation', 'Pranayama'],
+        social: {
+            instagram: 'https://instagram.com/priyayoga',
+            twitter: 'https://twitter.com/priyayoga'
+        },
+        experience: '15+ Years',
+        education: 'RYT 500 Certified, Yoga Alliance'
     },
     {
+        id: 'marcus-johnson',
+        slug: 'marcus-johnson',
         name: 'Marcus Johnson',
         role: 'Zumba Specialist',
         bio: 'International Zumba instructor with a passion for high-energy dance fitness.',
-        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600'
+        fullBio: 'Marcus Johnson is an explosive energy in the world of Zumba. With a background in athletics and professional dance, he turned his passion into a mission to make fitness fun. He has led Zumba workshops across three continents and is famous for his high-energy playlists that make every class feel like a Saturday night party.',
+        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600',
+        specialties: ['Zumba Party', 'Cardio Dance', 'HIIT', 'Latin Rhythms'],
+        social: {
+            instagram: 'https://instagram.com/marcuszumba',
+            facebook: 'https://facebook.com/marcuszumba'
+        },
+        experience: '8+ Years',
+        education: 'Licensed Zumba Instructor (ZIN)'
     },
     {
+        id: 'elena-petrova',
+        slug: 'elena-petrova',
         name: 'Elena Petrova',
         role: 'Dance Director',
         bio: 'Professional dancer and choreographer bringing 20 years of stage experience.',
-        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=600'
+        fullBio: 'Elena Petrova is a master of movement. Trained professionally since the age of 5, she has performed on global stages before turning her focus to choreography and teaching. Her pedagogical approach emphasizes technical precision without ever sacrificing the emotional soul of the dance. She believes everyone has a "rhythm within" waiting to be discovered.',
+        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=600',
+        specialties: ['Contemporary', 'Modern Jazz', 'Classical Ballet', 'Choreography'],
+        social: {
+            instagram: 'https://instagram.com/elenadance',
+            twitter: 'https://twitter.com/elenadance'
+        },
+        experience: '20+ Years',
+        education: 'Master of Fine Arts in Dance & Choreography'
     }
 ];
 
 // Schedule Data
 export const SCHEDULE = {
     Monday: [
-        { time: '07:00 AM', activity: 'Morning Vinyasa', type: 'Yoga', level: 'Beginner', instructor: 'Priya', duration: '60 min' },
-        { time: '09:30 AM', activity: 'Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus', duration: '45 min' },
-        { time: '04:00 PM', activity: 'Kids Ballet', type: 'Dance', level: 'Junior', instructor: 'Elena', duration: '45 min' },
-        { time: '06:30 PM', activity: 'Power Flow', type: 'Yoga', level: 'Intermediate', instructor: 'Priya', duration: '75 min' },
-        { time: '08:00 PM', activity: 'Contemporary Fusion', type: 'Dance', level: 'Advanced', instructor: 'Elena', duration: '60 min' },
+        { time: '07:00 AM', activity: 'Morning Vinyasa', type: 'Yoga', level: 'Beginner', instructor: 'Priya Sharma', duration: '60 min' },
+        { time: '09:30 AM', activity: 'Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
+        { time: '04:00 PM', activity: 'Kids Ballet', type: 'Dance', level: 'Junior', instructor: 'Elena Petrova', duration: '45 min' },
+        { time: '06:30 PM', activity: 'Power Flow', type: 'Yoga', level: 'Intermediate', instructor: 'Priya Sharma', duration: '75 min' },
+        { time: '08:00 PM', activity: 'Contemporary Fusion', type: 'Dance', level: 'Advanced', instructor: 'Elena Petrova', duration: '60 min' },
     ],
     Tuesday: [
-        { time: '06:30 AM', activity: 'Sunrise Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya', duration: '60 min' },
-        { time: '10:00 AM', activity: 'Zumba Gold', type: 'Zumba', level: 'Beginner', instructor: 'Marcus', duration: '45 min' },
-        { time: '05:00 PM', activity: 'Hip Hop Basics', type: 'Dance', level: 'Beginner', instructor: 'Elena', duration: '60 min' },
-        { time: '07:00 PM', activity: 'Cardio Zumba', type: 'Zumba', level: 'Intermediate', instructor: 'Marcus', duration: '50 min' },
+        { time: '06:30 AM', activity: 'Sunrise Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya Sharma', duration: '60 min' },
+        { time: '10:00 AM', activity: 'Zumba Gold', type: 'Zumba', level: 'Beginner', instructor: 'Marcus Johnson', duration: '45 min' },
+        { time: '05:00 PM', activity: 'Hip Hop Basics', type: 'Dance', level: 'Beginner', instructor: 'Elena Petrova', duration: '60 min' },
+        { time: '07:00 PM', activity: 'Cardio Zumba', type: 'Zumba', level: 'Intermediate', instructor: 'Marcus Johnson', duration: '50 min' },
     ],
     Wednesday: [
-        { time: '07:00 AM', activity: 'Hatha Yoga', type: 'Yoga', level: 'Beginner', instructor: 'Priya', duration: '60 min' },
-        { time: '09:30 AM', activity: 'Zumba Toning', type: 'Zumba', level: 'All Levels', instructor: 'Marcus', duration: '45 min' },
-        { time: '04:30 PM', activity: 'Jazz Fundamentals', type: 'Dance', level: 'Beginner', instructor: 'Elena', duration: '60 min' },
-        { time: '06:30 PM', activity: 'Deep Stretch', type: 'Yoga', level: 'All Levels', instructor: 'Priya', duration: '45 min' },
+        { time: '07:00 AM', activity: 'Hatha Yoga', type: 'Yoga', level: 'Beginner', instructor: 'Priya Sharma', duration: '60 min' },
+        { time: '09:30 AM', activity: 'Zumba Toning', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
+        { time: '04:30 PM', activity: 'Jazz Fundamentals', type: 'Dance', level: 'Beginner', instructor: 'Elena Petrova', duration: '60 min' },
+        { time: '06:30 PM', activity: 'Deep Stretch', type: 'Yoga', level: 'All Levels', instructor: 'Priya Sharma', duration: '45 min' },
     ],
     Thursday: [
-        { time: '07:00 AM', activity: 'Flow & Glow', type: 'Yoga', level: 'Intermediate', instructor: 'Priya', duration: '75 min' },
-        { time: '11:00 AM', activity: 'Aqua Zumba', type: 'Zumba', level: 'All Levels', instructor: 'Marcus', duration: '45 min' },
-        { time: '05:00 PM', activity: 'Bollywood Dance', type: 'Dance', level: 'All Levels', instructor: 'Elena', duration: '60 min' },
-        { time: '07:30 PM', activity: 'Latin Zumba', type: 'Zumba', level: 'Advanced', instructor: 'Marcus', duration: '50 min' },
+        { time: '07:00 AM', activity: 'Flow & Glow', type: 'Yoga', level: 'Intermediate', instructor: 'Priya Sharma', duration: '75 min' },
+        { time: '11:00 AM', activity: 'Aqua Zumba', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
+        { time: '05:00 PM', activity: 'Bollywood Dance', type: 'Dance', level: 'All Levels', instructor: 'Elena Petrova', duration: '60 min' },
+        { time: '07:30 PM', activity: 'Latin Zumba', type: 'Zumba', level: 'Advanced', instructor: 'Marcus Johnson', duration: '50 min' },
     ],
     Friday: [
-        { time: '06:30 AM', activity: 'Power Yoga', type: 'Yoga', level: 'Advanced', instructor: 'Priya', duration: '75 min' },
-        { time: '10:00 AM', activity: 'Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus', duration: '45 min' },
-        { time: '04:00 PM', activity: 'Kids Hip Hop', type: 'Dance', level: 'Junior', instructor: 'Elena', duration: '45 min' },
-        { time: '06:00 PM', activity: 'Contemporary', type: 'Dance', level: 'Intermediate', instructor: 'Elena', duration: '60 min' },
-        { time: '08:00 PM', activity: 'Candlelight Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya', duration: '60 min' },
+        { time: '06:30 AM', activity: 'Power Yoga', type: 'Yoga', level: 'Advanced', instructor: 'Priya Sharma', duration: '75 min' },
+        { time: '10:00 AM', activity: 'Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
+        { time: '04:00 PM', activity: 'Kids Hip Hop', type: 'Dance', level: 'Junior', instructor: 'Elena Petrova', duration: '45 min' },
+        { time: '06:00 PM', activity: 'Contemporary', type: 'Dance', level: 'Intermediate', instructor: 'Elena Petrova', duration: '60 min' },
+        { time: '08:00 PM', activity: 'Candlelight Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya Sharma', duration: '60 min' },
     ],
     Saturday: [
-        { time: '08:00 AM', activity: 'Weekend Warrior Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya', duration: '90 min' },
-        { time: '10:30 AM', activity: 'Mega Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus', duration: '60 min' },
-        { time: '01:00 PM', activity: 'Open Dance Floor', type: 'Dance', level: 'All Levels', instructor: 'Elena', duration: '120 min' },
+        { time: '08:00 AM', activity: 'Weekend Warrior Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya Sharma', duration: '90 min' },
+        { time: '10:30 AM', activity: 'Mega Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '60 min' },
+        { time: '01:00 PM', activity: 'Open Dance Floor', type: 'Dance', level: 'All Levels', instructor: 'Elena Petrova', duration: '120 min' },
     ],
 };
 
