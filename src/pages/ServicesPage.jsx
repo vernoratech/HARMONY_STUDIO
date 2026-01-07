@@ -38,7 +38,7 @@ const ServicesPage = () => {
                                 className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-20`}
                             >
                                 {/* Image */}
-                                <div className="lg:w-1/2">
+                                <div className="lg:w-1/2 overflow-hidden">
                                     <div className="relative group">
                                         {/* Background Decoration */}
                                         <div
@@ -54,15 +54,15 @@ const ServicesPage = () => {
                                         <img
                                             src={service.image}
                                             alt={service.title}
-                                            className="w-full h-[500px] object-cover rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+                                            className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
                                         />
 
                                         {/* Floating Badge */}
                                         <div
-                                            className="absolute -bottom-6 -right-6 bg-black border-2 rounded-2xl !p-6 shadow-xl"
+                                            className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-black border-2 rounded-xl md:rounded-2xl !p-4 md:!p-6 shadow-xl"
                                             style={{ borderColor: service.color }}
                                         >
-                                            <span className="text-4xl font-bold" style={{ color: service.color }}>
+                                            <span className="text-2xl md:text-4xl font-bold" style={{ color: service.color }}>
                                                 0{idx + 1}
                                             </span>
                                         </div>
