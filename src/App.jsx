@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,7 +18,7 @@ import GalleryPage from "./pages/GalleryPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import InstructorDetailPage from "./pages/InstructorDetailPage";
 import CookieConsent from "./components/ui/CookieConsent";
-
+import IntroScreen from "./components/ui/IntroScreen";
 import SplashCursor from "./components/ui/SplashCursor";
 
 // Scroll to top on route change
@@ -38,8 +38,11 @@ const PageWrapper = ({ children }) => {
 };
 
 function App() {
+  const [showIntro, setShowIntro] = useState(true);
+
   return (
     <Router>
+      {showIntro && <IntroScreen onComplete={() => setShowIntro(false)} />}
       <div className="min-h-screen bg-black font-sans text-gray-900 selection:bg-[#F5A623]/20 selection:text-[#F5A623]">
         <ScrollToTop />
         <Navbar />
