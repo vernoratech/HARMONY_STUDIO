@@ -19,7 +19,6 @@ import NotFoundPage from "./pages/NotFoundPage";
 import InstructorDetailPage from "./pages/InstructorDetailPage";
 import CookieConsent from "./components/ui/CookieConsent";
 import IntroScreen from "./components/ui/IntroScreen";
-import SplashCursor from "./components/ui/SplashCursor";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -129,18 +128,6 @@ function App() {
 
         <Footer />
         <CookieConsent />
-        <SplashCursor
-          SIM_RESOLUTION={32}
-          DYE_RESOLUTION={512}
-          DENSITY_DISSIPATION={4}
-          VELOCITY_DISSIPATION={1.5}
-          PRESSURE={0.1}
-          PRESSURE_ITERATIONS={10}
-          CURL={2}
-          SPLAT_RADIUS={0.3}
-          SPLAT_FORCE={4000}
-          COLOR_UPDATE_SPEED={15}
-        />
       </div>
     </Router>
   );
