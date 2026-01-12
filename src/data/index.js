@@ -131,6 +131,49 @@ export const SERVICES = [
             { day: 'Friday', time: '10:00 AM', class: 'Zumba Party', level: 'All Levels' },
             { day: 'Saturday', time: '10:30 AM', class: 'Mega Zumba Party', level: 'All Levels' }
         ]
+    },
+    {
+        id: 'aerobics',
+        slug: 'aerobics',
+        title: 'Aerobics',
+        tagline: 'High-Energy Cardio Blast',
+        description: 'Elevate your heart rate and tone your entire body with our dynamic aerobics classes. A combination of rhythmic aerobic exercise with stretching and strength training routines to improve all elements of fitness.',
+        image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1200',
+        heroImage: 'https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?auto=format&fit=crop&q=80&w=2000',
+        features: ['Step Aerobics', 'Hi-Low Impact', 'Cardio Kickboxing', 'Body Styling', 'Interval Training', 'Circuit Training'],
+        color: '#f5a623',
+
+        deepExplanation: {
+            intro: "Aerobics at Harmony Studio is about sustained energy and rhythmic precision. It's a classic for a reason—it works. We combine choreographed movements with cardiovascular conditioning to help you build endurance and strength simultaneously. It's fast-paced, music-driven, and highly effective for those who want a structured yet high-energy workout.",
+            experience: "The atmosphere is electric. Think driving beats, synchronized movement, and a group energy that's contagious. You'll be using step platforms, light weights, and your own body resistance. Instructor Sarah keeps the pace high but provides modifications for every move. You'll leave feeling empowered and physically challenged.",
+            level: "We offer 'Lite' versions for those new to rhythmic cardio, focusing on basic steps and lower impact. Our 'Elite' sessions introduce complex choreography and high-intensity intervals. Most of our classes are 'Open Level', where the intensity is what you make of it. If you can move to a beat, you can do aerobics."
+        },
+
+        whoItsFor: [
+            { persona: 'Fitness Purists', description: 'If you want a workout that hits every muscle and burns calories, this is it.' },
+            { persona: 'Structure Lovers', description: 'Perfect for those who enjoy rhythmic, choreographed routines.' },
+            { persona: 'Weight Loss Seekers', description: 'High calorie burn and muscle toning in every session.' },
+            { persona: 'Endurance Builders', description: 'Great for improving cardiovascular health and stamina.' }
+        ],
+
+        whoItsNotFor: "If you're looking for a relaxing or reflective practice, stick with our Yoga sessions. Aerobics is intense, loud, and physically demanding.",
+
+        benefits: [
+            { category: 'Physical', title: 'Heart Health', description: 'Strengthen your heart and improve lung capacity' },
+            { category: 'Physical', title: 'Muscle Toning', description: 'Targeted moves to sculpt and define your body' },
+            { category: 'Mental', title: 'Endorphin Rush', description: 'The natural high from intense, rhythmic exercise' },
+            { category: 'Mental', title: 'Coordination', description: 'Improve the mind-body connection through choreography' },
+            { category: 'Lifestyle', title: 'Consistency', description: 'The fun, rhythmic nature makes it easy to keep coming back' },
+            { category: 'Lifestyle', title: 'Visible Results', description: 'Fast-track your fitness goals with high-intensity cardio' }
+        ],
+
+        schedulePreview: [
+            { day: 'Monday', time: '6:00 PM', class: 'Step Burn', level: 'Intermediate' },
+            { day: 'Wednesday', time: '7:30 PM', class: 'Kickbox Cardio', level: 'All Levels' },
+            { day: 'Thursday', time: '8:30 AM', class: 'Aerobics Lite', level: 'Beginner' },
+            { day: 'Friday', time: '5:00 PM', class: 'Interval Circuit', level: 'Advanced' },
+            { day: 'Saturday', time: '9:00 AM', class: 'Weekend Blast', level: 'All Levels' }
+        ]
     }
 ];
 
@@ -183,6 +226,22 @@ export const INSTRUCTORS = [
         },
         experience: '20+ Years',
         education: 'Master of Fine Arts in Dance & Choreography'
+    },
+    {
+        id: 'sarah-miller',
+        slug: 'sarah-miller',
+        name: 'Sarah Miller',
+        role: 'Aerobics Lead',
+        bio: 'Certified fitness professional specializing in rhythmic aerobics and HIIT.',
+        fullBio: 'Sarah Miller brings over 12 years of experience in the fitness industry. A former competitive gymnast, she transitioned into group fitness with a focus on high-impact aerobics and circuit training. Her classes are legendary for their intensity and Sarah\'s infectious "no-excuses" attitude that pushes every student to their personal best.',
+        image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=600',
+        specialties: ['Step Aerobics', 'Cardio Kickboxing', 'Circuit Training', 'HIIT'],
+        social: {
+            instagram: 'https://instagram.com/sarahfit',
+            twitter: 'https://twitter.com/sarahfit'
+        },
+        experience: '12+ Years',
+        education: 'ACE Certified Group Fitness Instructor'
     }
 ];
 
@@ -192,7 +251,9 @@ export const SCHEDULE = {
         { time: '07:00 AM', activity: 'Morning Vinyasa', type: 'Yoga', level: 'Beginner', instructor: 'Priya Sharma', duration: '60 min' },
         { time: '09:30 AM', activity: 'Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
         { time: '04:00 PM', activity: 'Kids Ballet', type: 'Dance', level: 'Junior', instructor: 'Elena Petrova', duration: '45 min' },
+        { time: '06:00 PM', activity: 'Step Burn', type: 'Aerobics', level: 'Intermediate', instructor: 'Sarah Miller', duration: '60 min' },
         { time: '06:30 PM', activity: 'Power Flow', type: 'Yoga', level: 'Intermediate', instructor: 'Priya Sharma', duration: '75 min' },
+        { time: '07:30 PM', activity: 'Kickbox Cardio', type: 'Aerobics', level: 'All Levels', instructor: 'Sarah Miller', duration: '45 min' },
         { time: '08:00 PM', activity: 'Contemporary Fusion', type: 'Dance', level: 'Advanced', instructor: 'Elena Petrova', duration: '60 min' },
     ],
     Tuesday: [
@@ -209,6 +270,7 @@ export const SCHEDULE = {
     ],
     Thursday: [
         { time: '07:00 AM', activity: 'Flow & Glow', type: 'Yoga', level: 'Intermediate', instructor: 'Priya Sharma', duration: '75 min' },
+        { time: '08:30 AM', activity: 'Aerobics Lite', type: 'Aerobics', level: 'Beginner', instructor: 'Sarah Miller', duration: '45 min' },
         { time: '11:00 AM', activity: 'Aqua Zumba', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
         { time: '05:00 PM', activity: 'Bollywood Dance', type: 'Dance', level: 'All Levels', instructor: 'Elena Petrova', duration: '60 min' },
         { time: '07:30 PM', activity: 'Latin Zumba', type: 'Zumba', level: 'Advanced', instructor: 'Marcus Johnson', duration: '50 min' },
@@ -217,11 +279,13 @@ export const SCHEDULE = {
         { time: '06:30 AM', activity: 'Power Yoga', type: 'Yoga', level: 'Advanced', instructor: 'Priya Sharma', duration: '75 min' },
         { time: '10:00 AM', activity: 'Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '45 min' },
         { time: '04:00 PM', activity: 'Kids Hip Hop', type: 'Dance', level: 'Junior', instructor: 'Elena Petrova', duration: '45 min' },
+        { time: '05:00 PM', activity: 'Interval Circuit', type: 'Aerobics', level: 'Advanced', instructor: 'Sarah Miller', duration: '60 min' },
         { time: '06:00 PM', activity: 'Contemporary', type: 'Dance', level: 'Intermediate', instructor: 'Elena Petrova', duration: '60 min' },
         { time: '08:00 PM', activity: 'Candlelight Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya Sharma', duration: '60 min' },
     ],
     Saturday: [
         { time: '08:00 AM', activity: 'Weekend Warrior Yoga', type: 'Yoga', level: 'All Levels', instructor: 'Priya Sharma', duration: '90 min' },
+        { time: '09:00 AM', activity: 'Weekend Blast', type: 'Aerobics', level: 'All Levels', instructor: 'Sarah Miller', duration: '60 min' },
         { time: '10:30 AM', activity: 'Mega Zumba Party', type: 'Zumba', level: 'All Levels', instructor: 'Marcus Johnson', duration: '60 min' },
         { time: '01:00 PM', activity: 'Open Dance Floor', type: 'Dance', level: 'All Levels', instructor: 'Elena Petrova', duration: '120 min' },
     ],
@@ -299,6 +363,13 @@ export const TESTIMONIALS = [
         content: 'I joined with no dance experience and now I perform in recitals! Elena is a patient and inspiring teacher.',
         rating: 5,
         image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200'
+    },
+    {
+        name: 'David Wilson',
+        role: 'Aerobics Member',
+        content: 'The aerobics classes here are intense but so rewarding. I\'ve lost 10kg in 3 months and my stamina has never been better!',
+        rating: 5,
+        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200'
     }
 ];
 
@@ -327,6 +398,7 @@ export const FOOTER_LINKS = [
 // Contact Info
 export const CONTACT_INFO = {
     address: '123 Wellness Boulevard, Suite 100, Mumbai 400001',
+    googleMaps: 'https://maps.app.goo.gl/Vt6zyfFaRzYg8mKL8',
     phone: '+91 98765 43210',
     email: 'hello@harmonystudio.com',
     hours: {
@@ -336,7 +408,8 @@ export const CONTACT_INFO = {
     social: {
         instagram: 'https://instagram.com/harmonystudio',
         facebook: 'https://facebook.com/harmonystudio',
-        twitter: 'https://twitter.com/harmonystudio'
+        twitter: 'https://twitter.com/harmonystudio',
+        linkedin: 'https://www.linkedin.com/company/vernoratech/'
     }
 };
 
@@ -421,5 +494,17 @@ export const GALLERY = [
         caption: 'Reception & Lounge',
         category: 'General',
         alt: 'Modern studio reception and waiting area'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?auto=format&fit=crop&q=80&w=800',
+        caption: 'Aerobics Circuit Boot Camp',
+        category: 'Aerobics',
+        alt: 'Participants doing intense circuit training'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800',
+        caption: 'Step Aerobics Session',
+        category: 'Aerobics',
+        alt: 'Class using step platforms for cardio'
     }
 ];
