@@ -1,9 +1,23 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ChevronRight, ArrowRight } from 'lucide-react';
+import { useEffect } from 'react';
 import { SERVICES } from '../data';
 import SectionHeading from '../components/ui/SectionHeading';
 
 const ServicesPage = () => {
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const el = document.querySelector(hash);
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+    }, [hash]);
+
     return (
         <div className="animate-fade-in">
             {/* Hero Section */}
@@ -35,8 +49,11 @@ const ServicesPage = () => {
                         {SERVICES.map((service, idx) => (
                             <div
                                 key={service.id}
-                                className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-20`}
+                                id={service.id} // 👈 ADD THIS
+                                className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'
+                                    } items-center gap-12 lg:gap-20 scroll-mt-32`}
                             >
+
                                 {/* Image */}
                                 <div className="lg:w-1/2 overflow-hidden">
                                     <div className="relative group">
@@ -114,6 +131,7 @@ const ServicesPage = () => {
                                         </Link>
                                         <Link
                                             to="/contact"
+                                            state={{ service: service.id }} 
                                             className="inline-flex items-center !px-8 !py-3 rounded-full font-bold border-2 text-white hover:bg-white hover:text-black transition-all"
                                             style={{ borderColor: service.color }}
                                         >
@@ -141,9 +159,9 @@ const ServicesPage = () => {
                             Book Free Trial
                             <ArrowRight size={18} className="!ml-2" />
                         </Link>
-                        <Link to="/pricing" className="btn btn-outline">
+                        {/* <Link to="/pricing" className="btn btn-outline">
                             View Pricing
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </section>

@@ -1,9 +1,9 @@
 import { useState, useMemo } from "react";
-import { GALLERY } from "../data";
+import { GALLERY, ACTIONSHOT } from "../data";
 import GalleryItem from "../components/ui/GalleryItem";
 import SectionHeading from "../components/ui/SectionHeading";
 
-const CATEGORIES = ["All", "Yoga", "Dance", "Zumba", "Aerobics", "General"];
+const CATEGORIES = ["All", "Yoga", "Dance", "Zumba", "Aerobics", "Celebration"];
 
 const GalleryPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -50,11 +50,10 @@ const GalleryPage = () => {
               <button
                 key={cat}
                 onClick={() => setActiveFilter(cat)}
-                className={`px-8 py-3 rounded-full text-sm font-bold tracking-widest uppercase transition-all duration-300 border ${
-                  activeFilter === cat
-                    ? "bg-[#F5A623] border-[#F5A623] text-black shadow-[0_0_20px_rgba(245,166,35,0.3)]"
-                    : "bg-white/5 border-white/10 text-gray-400 hover:border-[#F5A623]/50 hover:text-white"
-                }`}
+                className={`px-8 py-3 rounded-full text-sm font-bold tracking-widest uppercase transition-all duration-300 border ${activeFilter === cat
+                  ? "bg-[#F5A623] border-[#F5A623] text-black shadow-[0_0_20px_rgba(245,166,35,0.3)]"
+                  : "bg-white/5 border-white/10 text-gray-400 hover:border-[#F5A623]/50 hover:text-white"
+                  }`}
               >
                 {cat}
               </button>
@@ -62,7 +61,7 @@ const GalleryPage = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredGallery.map((item, index) => (
+            {/* {filteredGallery.map((item, index) => (
               <div
                 key={index}
                 className="animate-fade-in"
@@ -70,12 +69,21 @@ const GalleryPage = () => {
               >
                 <GalleryItem item={item} />
               </div>
+            ))} */}
+            {filteredGallery.map((item, index) => (
+              <GalleryItem
+                key={index}
+                item={item}
+                items={filteredGallery}
+                index={index}
+              />
             ))}
+
           </div>
 
           {filteredGallery.length === 0 && (
             <div className="text-center py-20! text-gray-500 italic">
-              No images found in this category yet.
+              No Contents found in this category yet.
             </div>
           )}
         </div>
@@ -92,7 +100,11 @@ const GalleryPage = () => {
           />
 
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 mt-16!">
-            {GALLERY.slice(0, 9).map((item, idx) => (
+            {/* {GALLERY.filter(item => item.type === "image")
+                 .slice(0, 9)
+                 .map((item, idx) => ( */}
+
+            {ACTIONSHOT.slice(0, 9).map((item, idx) => (
               <div
                 key={idx}
                 className="mb-6! break-inside-avoid animate-fade-in"
@@ -306,8 +318,8 @@ const GalleryPage = () => {
             <a href="/contact" className="btn btn-primary px-10">
               Book Your First Class
             </a>
-            <a href="/schedule" className="btn btn-outline px-10">
-              Explore Schedule
+            <a href="/services" className="btn btn-outline px-10">
+              Explore Services
             </a>
           </div>
         </div>

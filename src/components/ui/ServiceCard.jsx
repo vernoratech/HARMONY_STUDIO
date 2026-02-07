@@ -18,12 +18,12 @@ const ServiceCard = ({ service, index }) => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-transparent" />
 
                 {/* Type Badge */}
-                <div
+                {/* <div
                     className="absolute top-4 right-4 !px-4 !py-1.5 rounded-full text-xs font-bold uppercase tracking-wider"
                     style={{ backgroundColor: `${service.color}20`, color: service.color }}
                 >
                     {service.id}
-                </div>
+                </div> */}
             </div>
 
             {/* Content */}
@@ -57,7 +57,8 @@ const ServiceCard = ({ service, index }) => {
 
                 {/* CTA */}
                 <Link
-                    to="/services"
+                    // to="/services"
+                    to={`/services#${service.id}`}
                     className="inline-flex items-center text-[#F5A623] font-semibold text-sm group/link"
                 >
                     <span className="underline-animation">Explore {service.title}</span>

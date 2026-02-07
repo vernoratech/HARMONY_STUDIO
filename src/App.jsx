@@ -72,14 +72,14 @@ function App() {
                 </PageWrapper>
               }
             />
-            <Route
+            {/* <Route
               path="/schedule"
               element={
                 <PageWrapper>
                   <SchedulePage />
                 </PageWrapper>
               }
-            />
+            /> */}
             <Route
               path="/about"
               element={
@@ -88,14 +88,14 @@ function App() {
                 </PageWrapper>
               }
             />
-            <Route
+            {/* <Route
               path="/pricing"
               element={
                 <PageWrapper>
                   <PricingPage />
                 </PageWrapper>
               }
-            />
+            /> */}
             <Route
               path="/contact"
               element={

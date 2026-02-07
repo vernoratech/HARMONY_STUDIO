@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
-  Twitter,
+  Youtube,
   MapPin,
   Phone,
   Mail,
   ArrowRight,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { FOOTER_LINKS, CONTACT_INFO } from "../data";
 import logo from "../assets/logo.png";
 
@@ -48,12 +49,12 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href={CONTACT_INFO.social.facebook}
+                href={CONTACT_INFO.social.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#F5A623] hover:text-black transition-all duration-300"
               >
-                <Facebook size={18} />
+                <FaWhatsapp  size={18} />
               </a>
               <a
                 href={CONTACT_INFO.social.instagram}
@@ -64,12 +65,12 @@ const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a
-                href={CONTACT_INFO.social.twitter}
+                href={CONTACT_INFO.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#F5A623] hover:text-black transition-all duration-300"
               >
-                <Twitter size={18} />
+                <Youtube size={18} />
               </a>
             </div>
           </div>
@@ -108,7 +109,7 @@ const Footer = () => {
                   size={18}
                   className="!mr-3 !mt-1 text-[#F5A623] shrink-0"
                 />
-                <span className="text-sm">{CONTACT_INFO.address}</span>
+                <span className="text-sm"><div dangerouslySetInnerHTML={{ __html: CONTACT_INFO.address }} /></span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="!mr-3 text-[#F5A623] shrink-0" />

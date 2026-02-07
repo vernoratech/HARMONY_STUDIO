@@ -12,7 +12,7 @@ import {
   Award,
   Star,
 } from "lucide-react";
-import { INSTRUCTORS } from "../data";
+import { STATS,INSTRUCTORS } from "../data";
 import InstructorCard from "../components/ui/InstructorCard";
 import SectionHeading from "../components/ui/SectionHeading";
 import TestimonialSlider from "../components/ui/TestimonialSlider";
@@ -45,7 +45,7 @@ const AboutPage = () => {
             className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed animate-slide-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Founded in 2018, Harmony Studio was born from a simple belief: that
+            Founded in 2022, Harmony Studio was born from a simple belief: that
             movement is medicine, and everyone deserves access to transformative
             wellness experiences. We are more than a fitness space; we are a
             community dedicated to the art of being well.
@@ -174,7 +174,7 @@ const AboutPage = () => {
             <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=600"
+                  src="https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770458626/355429496_553441500330880_6564643484386808839_n_wiemtd.jpg"
                   alt="Yoga"
                   className="rounded-3xl w-full h-64 object-cover shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
                 />
@@ -186,12 +186,12 @@ const AboutPage = () => {
               </div>
               <div className="space-y-4 pt-12!">
                 <img
-                  src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=600"
+                  src="https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770456995/IMG_0370_rgbvpa.jpg"
                   alt="Dance"
                   className="rounded-3xl w-full h-48 object-cover shadow-xl"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&q=80&w=600"
+                  src="https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388085/Harmony_Studio/zk27fyjnahto4zb4ifif.jpg"
                   alt="Zumba"
                   className="rounded-3xl w-full h-64 object-cover shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
                 />
@@ -251,12 +251,7 @@ const AboutPage = () => {
       <section className="py-20! bg-[#F5A623]">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: "10+", label: "Years Experience" },
-              { value: "5000+", label: "Active Members" },
-              { value: "15", label: "Certified Leaders" },
-              { value: "150+", label: "Weekly Sessions" },
-            ].map((stat, index) => (
+            {STATS.map((stat, index) => (
               <div key={index} className="group">
                 <div className="text-4xl md:text-5xl font-extrabold text-black mb-2! group-hover:scale-110 transition-transform">
                   {stat.value}
