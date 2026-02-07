@@ -132,7 +132,7 @@ const InstructorDetailPage = () => {
             </section>
 
             {/* CLASSES SCHEDULE SECTION */}
-            <section className="!py-24">
+            {/* <section className="!py-24">
                 <div className="container-custom">
                     <div className="text-center !mb-16">
                         <h2 className="text-4xl font-bold text-white !mb-4">Weekly Class Schedule</h2>
@@ -198,7 +198,7 @@ const InstructorDetailPage = () => {
                         )}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FINAL CTA */}
             <section className="!py-20 bg-gradient-to-b from-transparent to-[#F5A623]/10">
@@ -212,8 +212,8 @@ const InstructorDetailPage = () => {
                             Book a Consultation
                             <ArrowRight size={20} className="!ml-2 transition-transform group-hover:translate-x-1" />
                         </Link>
-                        <Link to="/schedule" className="btn btn-secondary">
-                            View Full Schedule
+                        <Link to="/services" className="btn btn-secondary">
+                            View Services
                         </Link>
                     </div>
                 </div>
