@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import { GALLERY, ACTIONSHOT } from "../data";
 import GalleryItem from "../components/ui/GalleryItem";
 import SectionHeading from "../components/ui/SectionHeading";
@@ -230,7 +231,7 @@ const GalleryPage = () => {
               <div className="flex gap-8! mt-12!">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#F5A623] mb-2!">
-                    5000+
+                    500+
                   </div>
                   <div className="text-gray-500 text-xs uppercase tracking-widest">
                     Sq. Ft. Space
@@ -239,7 +240,7 @@ const GalleryPage = () => {
                 <div className="border-r border-white/10" />
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#F5A623] mb-2!">
-                    4
+                    01
                   </div>
                   <div className="text-gray-500 text-xs uppercase tracking-widest">
                     Premium Studios
@@ -315,9 +316,16 @@ const GalleryPage = () => {
             Your first session is where your own transformation story begins.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="/contact" className="btn btn-primary px-10">
+            <Link
+              to="/contact"
+              state={{
+                message:
+                  "I want to book a trial. I'm interested in exploring the studio or classes.",
+              }}
+              className="btn btn-primary px-10"
+            >
               Book Your First Class
-            </a>
+            </Link>
             <a href="/services" className="btn btn-outline px-10">
               Explore Services
             </a>

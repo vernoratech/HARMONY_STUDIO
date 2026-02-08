@@ -225,13 +225,11 @@ const AboutPage = () => {
             light={true}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 gap-12 justify-center justify-items-center [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">
             {INSTRUCTORS.map((instructor, index) => (
-              <InstructorCard
-                key={instructor.name}
-                instructor={instructor}
-                index={index}
-              />
+              <div key={instructor.name} className="w-full max-w-sm mx-auto">
+                <InstructorCard instructor={instructor} index={index} />
+              </div>
             ))}
           </div>
 

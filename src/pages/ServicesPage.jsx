@@ -68,11 +68,14 @@ const ServicesPage = () => {
                                         />
 
                                         {/* Main Image */}
-                                        <img
-                                            src={service.image}
-                                            alt={service.title}
-                                            className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
-                                        />
+                                        <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] md:h-[500px]">
+                                            <img
+                                                src={service.image}
+                                                alt={service.title}
+                                                className="w-full h-full object-cover rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+                                            />
+                                        </div>
+
 
                                         {/* Floating Badge */}
                                         <div
@@ -131,7 +134,7 @@ const ServicesPage = () => {
                                         </Link>
                                         <Link
                                             to="/contact"
-                                            state={{ service: service.id }} 
+                                            state={{ service: service.id }}
                                             className="inline-flex items-center !px-8 !py-3 rounded-full font-bold border-2 text-white hover:bg-white hover:text-black transition-all"
                                             style={{ borderColor: service.color }}
                                         >
@@ -155,7 +158,14 @@ const ServicesPage = () => {
                         light={true}
                     />
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link to="/contact" className="btn btn-primary">
+                        <Link
+                            to="/contact"
+                            state={{
+                                message:
+                                    "I want to book a trial. I'm interested in exploring the studio or classes.",
+                            }}
+                            className="btn btn-primary"
+                        >
                             Book Free Trial
                             <ArrowRight size={18} className="!ml-2" />
                         </Link>

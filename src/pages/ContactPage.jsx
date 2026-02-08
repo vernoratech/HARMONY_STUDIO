@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import { useLocation } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import { CONTACT_INFO, SERVICES } from "../data";
@@ -19,6 +20,7 @@ const ContactPage = () => {
   const formCardRef = useRef(null); // NEW
   const location = useLocation();
   const selectedService = location.state?.service || "";
+  const presetMessage = location.state?.message || "";
 
   const [formData, setFormData] = useState(INITIAL_FORM_STATE);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -45,34 +47,91 @@ const ContactPage = () => {
     }
   }, [selectedService]);
 
+  useEffect(() => {
+    if (presetMessage) {
+      setFormData((prev) => ({
+        ...prev,
+        message: presetMessage,
+      }));
+      document
+        .getElementById("contact-form")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      setTimeout(() => {
+        nameInputRef.current?.focus();
+      }, 400);
+    }
+  }, [presetMessage]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     setIsSubmitting(true);
 
-    /* Simulate API call */
-    setTimeout(() => {
-      setIsSubmitted(true);
-      setIsSubmitting(false);
+    const serviceLabel =
+      SERVICES.find((service) => service.id === formData.service)?.title ||
+      formData.service ||
+      "Not selected";
 
-      /* CLEAR FORM DATA */
-      setFormData({
-        ...INITIAL_FORM_STATE,
-        service: selectedService || "",
+    const modeLabel =
+      formData.mode === "online"
+        ? "Online"
+        : formData.mode === "offline"
+        ? "Offline"
+        : "Not selected";
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || "Not provided",
+      service: serviceLabel,
+      mode: modeLabel,
+      message: formData.message,
+      date: new Date().toLocaleString(),
+    };
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    emailjs
+      .send(serviceId, templateId, templateParams, { publicKey })
+      .then(() => {
+        setIsSubmitted(true);
+        setIsSubmitting(false);
+
+        /* CLEAR FORM DATA */
+        setFormData({
+          ...INITIAL_FORM_STATE,
+          service: selectedService || "",
+        });
+
+        /* SCROLL + FOCUS FORM CARD */
+        formCardRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+
+        setTimeout(() => setIsSubmitted(false), 3000);
+      })
+      .catch((error) => {
+        console.error("EmailJS send failed:", error);
+        setIsSubmitting(false);
       });
-
-      /* SCROLL + FOCUS FORM CARD */
-      formCardRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-
-      setTimeout(() => setIsSubmitted(false), 3000);
-    }, 800);
   };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const focusFormWithMessage = (message) => {
+    setFormData((prev) => ({ ...prev, message }));
+    document
+      .getElementById("contact-form")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => {
+      nameInputRef.current?.focus();
+    }, 400);
   };
 
   return (
@@ -281,9 +340,9 @@ const ContactPage = () => {
                         onChange={handleChange}
                         className="w-full bg-white/5 border border-white/10 rounded-xl !px-4 !py-3.5 text-white"
                       >
-                        <option value="">Select a Service</option>
+                        <option value="" className="text-black bg-white">Select a Service</option>
                         {SERVICES.map((service) => (
-                          <option key={service.id} value={service.id}>
+                          <option key={service.id} value={service.id} className="text-black bg-white">
                             {service.title}
                           </option>
                         ))}
@@ -295,9 +354,15 @@ const ContactPage = () => {
                         onChange={handleChange}
                         className="w-full bg-white/5 border border-white/10 rounded-xl !px-4 !py-3.5 text-white"
                       >
-                        <option value="">Select Mode</option>
-                        <option value="online">Online Classes</option>
-                        <option value="offline">Offline Classes</option>
+                        <option value="" className="text-black bg-white">
+                          Select Mode
+                        </option>
+                        <option value="online" className="text-black bg-white">
+                          Online Classes
+                        </option>
+                        <option value="offline" className="text-black bg-white">
+                          Offline Classes
+                        </option>
                       </select>
                     </div>
 
@@ -345,7 +410,16 @@ const ContactPage = () => {
               <p className="text-gray-500 text-sm !mb-4">
                 Experience your first class free
               </p>
-              <a href="#" className="text-[#F5A623] font-semibold text-sm">
+              <a
+                href="#contact-form"
+                onClick={(e) => {
+                  e.preventDefault();
+                  focusFormWithMessage(
+                    "I want to book a trial. I'm interested in exploring the studio or classes."
+                  );
+                }}
+                className="text-[#F5A623] font-semibold text-sm"
+              >
                 Book Now →
               </a>
             </div>
@@ -359,8 +433,17 @@ const ContactPage = () => {
               <p className="text-gray-500 text-sm !mb-4">
                 Speak with our wellness advisor
               </p>
-              <a href="#" className="text-[#F5A623] font-semibold text-sm">
-                Schedule →
+              <a
+                href="#contact-form"
+                onClick={(e) => {
+                  e.preventDefault();
+                  focusFormWithMessage(
+                    "I want to schedule a call. I'm interested in learning more."
+                  );
+                }}
+                className="text-[#F5A623] font-semibold text-sm"
+              >
+                Schedule Now →
               </a>
             </div>
             <div className="bg-white/5 rounded-2xl !p-8 text-center hover:bg-white/10 transition-colors border border-white/5">
@@ -390,3 +473,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+

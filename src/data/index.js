@@ -186,7 +186,7 @@ export const INSTRUCTORS = [
         role: 'Founder & Lead Instructor',
         bio: 'Certified Yoga, Zumba, and Nutrition instructor with 7+ years of experience, specializing in mindful movement and holistic wellness.',
         fullBio: 'Rishika Pandey is the Founder and Lead Instructor at Harmony Studio with over seven years of professional experience in Yoga, Zumba, Meditation, and Nutrition. She is a K11 certified trainer and a certified Yoga, Zumba, and Nutrition instructor, dedicated to delivering structured, science-backed, and holistic training. Her approach integrates traditional yoga practices with modern fitness methodologies, focusing on sustainable health, strength, flexibility, and mental well-being.',
-        image: 'https://res.cloudinary.com/dg4ie90zk/image/upload/client_image_vuwkml.jpg',
+        image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524055/Instructor1_kdzjiq.jpg',
         specialties: ['Yoga', 'Zumba ', 'Meditation', 'Nutritionist '],
         social: {
             instagram: 'https://www.instagram.com/rishika_pandey/',
@@ -343,34 +343,63 @@ export const PRICING = [
 
 // Testimonials
 export const TESTIMONIALS = [
-    {
-        name: 'Ananya Gupta',
-        role: 'Yoga Member',
-        content: 'Harmony Studio transformed my life. The instructors are incredibly skilled and the atmosphere is so welcoming. I\'ve never felt healthier!',
-        rating: 5,
-        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200'
-    },
-    {
-        name: 'Rajesh Kumar',
-        role: 'Zumba Enthusiast',
-        content: 'The Zumba classes here are unmatched! Marcus brings so much energy and makes every session feel like a celebration.',
-        rating: 5,
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200'
-    },
-    {
-        name: 'Meera Patel',
-        role: 'Dance Student',
-        content: 'I joined with no dance experience and now I perform in recitals! Elena is a patient and inspiring teacher.',
-        rating: 5,
-        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200'
-    },
-    {
-        name: 'David Wilson',
-        role: 'Aerobics Member',
-        content: 'The aerobics classes here are intense but so rewarding. I\'ve lost 10kg in 3 months and my stamina has never been better!',
-        rating: 5,
-        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200'
-    }
+  {
+    name: "Ananya Sharma",
+    role: "Dance Member",
+    content: "Joining Harmony Studio reignited my love for dance. The choreography is expressive, the classes are well-structured, and every session leaves me feeling confident and energized.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Pooja Mehta",
+    role: "Zumba Member",
+    content: "Zumba at Harmony Studio is pure joy. The music, the energy, and the motivation from the instructors make workouts feel like a celebration rather than a routine.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Kritika Verma",
+    role: "Dance Student",
+    content: "I started as a complete beginner, but Harmony Studio made dance feel approachable and empowering. The guidance and encouragement here truly make a difference.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Sneha Iyer",
+    role: "Zumba Enthusiast",
+    content: "Every Zumba session lifts my mood instantly. Harmony Studio has helped me stay consistent with fitness while actually enjoying the process.",
+    rating: 4,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Ritika Malhotra",
+    role: "Dance Performer",
+    content: "Harmony Studio focuses not just on steps but on expression and confidence. Performing after training here feels natural and effortless.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Neha Joshi",
+    role: "Zumba Member",
+    content: "The positive atmosphere at Harmony Studio keeps me coming back. I’ve seen real improvement in my stamina, flexibility, and overall fitness.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Aditi Kulkarni",
+    role: "Dance & Zumba Member",
+    content: "Harmony Studio perfectly balances discipline and fun. Whether it’s dance or Zumba, every class feels thoughtfully designed and motivating.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  },
+  {
+    name: "Shreya Nair",
+    role: "Zumba Student",
+    content: "I’ve tried many fitness studios, but Harmony Studio stands out for its consistency and quality. Zumba here keeps me active and stress-free.",
+    rating: 5,
+    image: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770524925/isolated-object-avatar-dummy-sign-set-avatar-image-vector-icon-stock-vector-design-avatar-dummy-logo-137161322_xgy2es.jpg"
+  }
+
 ];
 
 // Navigation Links
@@ -403,7 +432,7 @@ export const CONTACT_INFO = {
     email: 'harmonystudio1997@gmail.com',
     hours: {
         weekdays: '7:00 AM - 12:00 AM',
-        weekends: false?'7:00 AM - 8:00 PM':'No Classes on Weekends'
+        weekends: false ? '7:00 AM - 8:00 PM' : 'No Classes on Weekends'
     },
     social: {
         instagram: 'https://www.instagram.com/harmony_studio7?igsh=dHI5amRuOHoxdXVx',
@@ -436,7 +465,7 @@ export const ACTIONSHOT = [
         alt: 'Energetic zumba class with participants dancing'
     },
     {
-        image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800',
+        image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770456995/IMG_0370_rgbvpa.jpg',
         caption: 'Dance Practice Hall',
         category: 'Dance',
         alt: 'Dancer practicing contemporary moves in studio'
@@ -454,7 +483,7 @@ export const ACTIONSHOT = [
         alt: 'High-energy cardio workout session'
     },
     {
-        image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800',
+        image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392419/Harmony_Studio/maavjjmjt18uz2ck6cxj.jpg',
         caption: 'Ballet Elegance',
         category: 'Dance',
         alt: 'Ballerina practicing graceful movements'
@@ -466,14 +495,14 @@ export const ACTIONSHOT = [
         alt: 'Peaceful yoga practice focusing on breath'
     },
     {
-        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800',
+        image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770527680/dqnju5jjxqu3fhmouxez.jpg',
         caption: 'Latin Rhythms',
         category: 'Zumba',
         alt: 'Zumba instructor leading latin dance moves'
     },
     {
         image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=800',
-        caption: 'Studio Ambiance',
+        caption: 'Outdoor Ambiance',
         category: 'General',
         alt: 'Beautiful studio interior with natural lighting'
     },
@@ -508,547 +537,376 @@ export const ACTIONSHOT = [
         alt: 'Class using step platforms for cardio'
     }
 ];
-// Gallery Data (Images + Videos unified)
 
-
-// export const GALLERY = [
-//   {
-//     id: 1,
-//     type: "image",
-//     category: "Yoga",
-//     src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Morning Yoga Session",
-//   },
-//   {
-//     id: 2,
-//     type: "video",
-//     category: "Zumba",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769409748/video1_jktj2k.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Zumba Energy Hour",
-//   },
-//   {
-//     id: 3,
-//     type: "image",
-//     category: "Dance",
-//     src: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Dance Practice Hall",
-//   },
-//   {
-//     id: 4,
-//     type: "image",
-//     category: "Yoga",
-//     src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800",
-//     caption: "Sunset Meditation",
-//   },
-//   {
-//     id: 5,
-//     type: "video",
-//     category: "Dance",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769407789/video6_lxio2h.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Contemporary Flow",
-//   },
-//   {
-//     id: 6,
-//     type: "image",
-//     category: "General",
-//     src: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Studio Ambiance",
-//   },
-//   {
-//     id: 7,
-//     type: "image",
-//     category: "Yoga",
-//     src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Mindful Breathing",
-//   },
-//   {
-//     id: 8,
-//     type: "video",
-//     category: "Dance",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769407804/video9_thwykq.mp4",
-//     thumbnailTime: 5.5,
-//     caption: "Studio Fun Day",
-//   },
-//   {
-//     id: 9,
-//     type: "image",
-//     category: "General",
-//     src: "https://images.unsplash.com/photo-1485727749690-d091e8284ef3?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Reception & Lounge",
-//   },
-//   {
-//     id: 10,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769407864/video4_sjpmbb.mp4",
-//     thumbnailTime: 2.3,
-//     caption: "Warrior Pose Mastery",
-//   },
-//   {
-//     id: 11,
-//     type: "video",
-//     category: "Aerobics",
-//     src: "https://www.instagram.com/reel/DT5kiLuCMep/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-//     thumbnailTime: 2.5,
-//     caption: "Aerobics Boot Camp",
-//   },
-//   {
-//     id: 12,
-//     type: "image",
-//     category: "Dance",
-//     src: "https://images.unsplash.com/photo-1520394584497-371f607e37c6?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Hip Hop Vibes",
-//   },
-//   {
-//     id: 13,
-//     type: "video",
-//     category: "Cultural",
-//     src: "/videos/cultural-event.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Cultural Celebration Night",
-//   },
-//    {
-//     id: 14,
-//     type: "image",
-//     category: "Aerobics",
-//     src: "https://images.unsplash.com/photo-1520394584497-371f607e37c6?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Aerobics Workout",
-//   },
-//   {
-//     id: 15,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/indoor_yoga_class_2_ac4uz1.mp4",
-//     thumbnailTime: 2.3,
-//     caption: "Partner Yoga Flow Session",
-//   },
-//   {
-//     id: 16,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/indoor_yoga_lcpns2.mp4",
-//     thumbnailTime: 4.5,
-//     caption: "Partner Yoga Flow Session",
-//   },
-//   {
-//     id: 17,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/indoor_yoga_class_3_uitiku.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Indoor Yoga Flow Session",
-//   },
-//   {
-//     id: 18,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/Indoor_Partner_Yoga_l3axqq.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Partner Yoga Session",
-//   },
-//   {
-//     id: 19,
-//     type: "video",
-//     category: "Dance",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/outdoor_dance_2_akcqas.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Outdoor Dance Session",
-//   },
-//   {
-//   id: 20,
-//   type: "instagram",
-//   category: "Zumba",
-//   instagramUrl: "https://www.instagram.com/reel/DRuI9-vikV1/?utm_source=ig_web_copy_link",
-//   thumbnail: "https://res.cloudinary.com/dg4ie90zk/image/upload/client_image_vuwkml.jpg",
-//   caption: "High Energy Zumba Flow"
-// }
-
-// ];
-
-
-
+// Gallery Data (Instagram and Images + Videos unified)
 export const GALLERY = [
-  {
-    id: 1,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/CrkesrerwfJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770372272/Harmony_Studio/kpleohtqgnvdesyb3ykf.jpg",
-    caption: "Zumba energy unleashed",
-    category: "Zumba"
-  },
-  {
-    id: 2,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DHnQu6zN7Hp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770372845/Harmony_Studio/dtq4toc0npn6vjltwbqv.jpg",
-    caption: "Flow into balance",
-    category: "Yoga"
-  },
-  {
-    id: 3,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DHFwTTwNpsB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770373215/Harmony_Studio/qdusyv2oc6s1ddaaykqn.jpg",
-    caption: "Dance with passion",
-    category: "Dance"
-  },
-  {
-    id: 4,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DEhja6vtJab/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770373393/Harmony_Studio/yxzilledrjeagk8lgfjd.jpg",
-    caption: "Peace in motion",
-    category: "Yoga"
-  },
-  {
-    id: 5,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DD_kPymtjWo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770374598/Harmony_Studio/qs4v5mi4jm6mefljiaot.jpg",
-    caption: "Celebrating together",
-    category: "Celebration"
-  },
-  {
-    id: 6,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DAt3LB5J47Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770375231/Harmony_Studio/d26dgqrpm5zuekhd03kw.jpg",
-    caption: "Joyful studio moments",
-    category: "Celebration"
-  },
-  {
-    id: 7,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C-qIQIlNati/?utm_source=ig_web_copy_link",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770375443/Harmony_Studio/nwcdzy2ih0wyl3uxlfvb.jpg",
-    caption: "Smiles and memories",
-    category: "Celebration"
-  },
-  {
-    id: 8,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C9ZPnF6NQ6f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770375647/Harmony_Studio/vyc2ffmx6q6wq0uqojfu.jpg",
-    caption: "Fun beyond walls",
-    category: "Dance"
-  },
-  {
-    id: 9,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C5NpSiDtzbl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770376009/Harmony_Studio/ylto8tzpmigfeefgeufm.jpg",
-    caption: "Dance under sky",
-    category: "Dance"
-  },
-  {
-    id: 10,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C5GtGYhtkvs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770378355/Harmony_Studio/dqhwv3pldqgei8qwo3zy.jpg",
-    caption: "Moments worth cheering",
-    category: "Celebration"
-  },
-  {
-    id: 11,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C4Pkh7ZtKcp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380545/Harmony_Studio/ym8vxolnzqnzg2asnxty.jpg",
-    caption: "Culture in motion",
-    category: "Dance"
-  },
-  {
-    id: 12,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C3FAiZeN6Sa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380622/Harmony_Studio/mpz5dnjzoyunvgvjktbo.jpg",
-    caption: "Breathe and stretch",
-    category: "Yoga"
-  },
-  {
-    id: 13,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C1m5AZltAuD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380681/Harmony_Studio/x3revp6eusd6mko7erti.jpg",
-    caption: "Active outdoor vibes",
-    category: "Celebration"
-  },
-  {
-    id: 14,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C1mymCothO3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380749/Harmony_Studio/v8vgmtmvuwx4uhebprnk.jpg",
-    caption: "Move in nature",
-    category: "Celebration"
-  },
-  {
-    id: 15,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C1U3rsHNaFC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770381020/Harmony_Studio/ynd5nzrsnm7rvmff12ql.jpg",
-    caption: "Pure celebration vibes",
-    category: "Celebration"
-  },
-  {
-    id: 16,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/CzjimRUtYxp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770387978/Harmony_Studio/fdqf09t5a6ne45nufcs1.jpg",
-    caption: "Studio celebration moments",
-    category: "Celebration"
-  },
-  {
-    id: 17,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/Cyc99s6thDx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388085/Harmony_Studio/zk27fyjnahto4zb4ifif.jpg",
-    caption: "Groove and express",
-    category: "Dance"
-  },
-  {
-    id: 18,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/CsOwdynrAgc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388178/Harmony_Studio/qc4ibtwdwpz1wi5vjgad.jpg",
-    caption: "High energy moves",
-    category: "Zumba"
-  },
-  {
-    id: 19,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/CrkesrerwfJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388261/Harmony_Studio/nn7sdwtndmipzasltay1.jpg",
-    caption: "Feel the rhythm",
-    category: "Zumba"
-  },
-  {
-    id: 20,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/CoogocpDaDI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770389813/Harmony_Studio/li8wmbymkl6ax1h0blal.jpg",
-    caption: "Fun in motion",
-    category: "Dances"
-  },
-  {
-    id: 21,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C4zgqieNAfn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770390099/Harmony_Studio/ws7o8yj7cvya7ktc7uxr.jpg",
-    caption: "Together we celebrate",
-    category: "Celebration"
-  },
-  {
-    id: 22,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/C8EFW9pRFKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770390710/Harmony_Studio/bcfkdbexc14eordz53xk.jpg",
-    caption: "Dance floor magic",
-    category: "Dance"
-  },
-  {
-    id: 23,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DEb-bbGNqlk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770390861/Harmony_Studio/fpnmnkd5j6kkm7xuq9gh.jpg",
-    caption: "Calm focused flow",
-    category: "Yoga"
-  },
-  {
-    id: 24,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DGkiU61yoCB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770391010/Harmony_Studio/u0g6nka199e07gi7gjpx.jpg",
-    caption: "Expression through dance",
-    category: "Dance"
-  },
-  {
-    id: 25,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DHDTr0-NeAU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392353/Harmony_Studio/i6ts6tjdfrx1jygemvkd.jpg",
-    caption: "Move with confidence",
-    category: "Dance"
-  },
-  {
-    id: 26,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DL92FwgobQO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392419/Harmony_Studio/maavjjmjt18uz2ck6cxj.jpg",
-    caption: "Rhythm meets passion",
-    category: "Dance"
-  },
-  {
-    id: 27,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DO5MvQMiK2B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392613/Harmony_Studio/ipgne6qiszkjoxljwmib.jpg",
-    caption: "Graceful dance moments",
-    category: "Dance"
-  },
-  {
-    id: 28,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/DPTMqPhjOqm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392708/Harmony_Studio/urwexfocevjvw3oilb4h.jpg",
-    caption: "Feel every beat",
-    category: "Dance"
-  },
-  {
-    id: 29,
-    type: "instagram",
-    url: "https://www.instagram.com/reel/Co7nNudjINk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392812/Harmony_Studio/hzlrcihvmjj4c0hnir8l.jpg",
-    caption: "Stretch breathe relax",
-    category: "Yoga"
-  },
+    {
+        id: 32,
+        type: "image",
+        category: "Yoga",
+        src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800",
+        caption: "Sunset Meditation",
+    },
+    {
+        id: 33,
+        type: "image",
+        category: "General",
+        src: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=1200",
+        caption: "Outdoor Ambiance",
+    },
+    {
+        id: 1,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/CrkesrerwfJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770372272/Harmony_Studio/kpleohtqgnvdesyb3ykf.jpg",
+        caption: "Zumba energy unleashed",
+        category: "Zumba"
+    },
+    {
+        id: 2,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DHnQu6zN7Hp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770372845/Harmony_Studio/dtq4toc0npn6vjltwbqv.jpg",
+        caption: "Flow into balance",
+        category: "Yoga"
+    },
+    {
+        id: 47,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528090/aero_j3dgc2.jpg",
+        caption: "Joy through movement",
+        category: "Aerobics"
+    },
+    {
+        id: 3,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DHFwTTwNpsB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770373215/Harmony_Studio/qdusyv2oc6s1ddaaykqn.jpg",
+        caption: "Dance with passion",
+        category: "Dance"
+    },
+    {
+        id: 4,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DEhja6vtJab/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770373393/Harmony_Studio/yxzilledrjeagk8lgfjd.jpg",
+        caption: "Peace in motion",
+        category: "Yoga"
+    },
+    {
+        id: 5,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DD_kPymtjWo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770374598/Harmony_Studio/qs4v5mi4jm6mefljiaot.jpg",
+        caption: "Celebrating together",
+        category: "Celebration"
+    },
+    {
+        id: 6,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DAt3LB5J47Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770375231/Harmony_Studio/d26dgqrpm5zuekhd03kw.jpg",
+        caption: "Joyful studio moments",
+        category: "Celebration"
+    },
+    {
+        id: 7,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C-qIQIlNati/?utm_source=ig_web_copy_link",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770375443/Harmony_Studio/nwcdzy2ih0wyl3uxlfvb.jpg",
+        caption: "Smiles and memories",
+        category: "Celebration"
+    },
+    {
+        id: 8,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C9ZPnF6NQ6f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770375647/Harmony_Studio/vyc2ffmx6q6wq0uqojfu.jpg",
+        caption: "Fun beyond walls",
+        category: "Dance"
+    },
+    {
+        id: 9,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C5NpSiDtzbl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770376009/Harmony_Studio/ylto8tzpmigfeefgeufm.jpg",
+        caption: "Dance under sky",
+        category: "Dance"
+    },
+    {
+        id: 37,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770526101/Harmony_Studio/iist3pyx7opmoarg9nan.jpg",
+        caption: "Rhythm meets expression",
+        category: "Dance"
+    },
+    {
+        id: 38,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770526410/Harmony_Studio/napymqadg7xuryiistyb.jpg",
+        caption: "Grace in motion",
+        category: "Dance"
+    },
+    {
+        id: 10,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C5GtGYhtkvs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770378355/Harmony_Studio/dqhwv3pldqgei8qwo3zy.jpg",
+        caption: "Moments worth cheering",
+        category: "Celebration"
+    },
+    {
+        id: 11,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C4Pkh7ZtKcp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380545/Harmony_Studio/ym8vxolnzqnzg2asnxty.jpg",
+        caption: "Culture in motion",
+        category: "Dance"
+    },
+    {
+        id: 12,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C3FAiZeN6Sa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380622/Harmony_Studio/mpz5dnjzoyunvgvjktbo.jpg",
+        caption: "Breathe and stretch",
+        category: "Yoga"
+    },
+    {
+        id: 13,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C1m5AZltAuD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380681/Harmony_Studio/x3revp6eusd6mko7erti.jpg",
+        caption: "Active outdoor vibes",
+        category: "Celebration"
+    },
+    {
+        id: 35,
+        type: "image",
+        category: "Yoga",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770458626/355429496_553441500330880_6564643484386808839_n_wiemtd.jpg",
+        caption: "Slim Stretch",
+    },
+    {
+        id: 14,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C1mymCothO3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770380749/Harmony_Studio/v8vgmtmvuwx4uhebprnk.jpg",
+        caption: "Move in nature",
+        category: "Celebration"
+    },
+    {
+        id: 15,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C1U3rsHNaFC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770381020/Harmony_Studio/ynd5nzrsnm7rvmff12ql.jpg",
+        caption: "Pure celebration vibes",
+        category: "Celebration"
+    },
+    {
+        id: 30,
+        type: "image",
+        category: "Yoga",
+        src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
+        caption: "Morning Yoga Session",
+    },
+    {
+        id: 31,
+        type: "image",
+        category: "Dance",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770456995/IMG_0370_rgbvpa.jpg",
+        caption: "Dance Practice Hall",
+    },
+    {
+        id: 16,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/CzjimRUtYxp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770387978/Harmony_Studio/fdqf09t5a6ne45nufcs1.jpg",
+        caption: "Studio celebration moments",
+        category: "Celebration"
+    },
+    {
+        id: 34,
+        type: "image",
+        category: "Yoga",
+        src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1200",
+        caption: "Mindful Breathing",
+    },
+    {
+        id: 17,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/Cyc99s6thDx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388085/Harmony_Studio/zk27fyjnahto4zb4ifif.jpg",
+        caption: "Groove and express",
+        category: "Dance"
+    },
+    {
+        id: 18,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/CsOwdynrAgc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388178/Harmony_Studio/qc4ibtwdwpz1wi5vjgad.jpg",
+        caption: "High energy moves",
+        category: "Zumba"
+    },
+    {
+        id: 19,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/CrkesrerwfJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770388261/Harmony_Studio/nn7sdwtndmipzasltay1.jpg",
+        caption: "Feel the rhythm",
+        category: "Zumba"
+    },
+    {
+        id: 43,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770527807/Harmony_Studio/t3toqi0khk6qgfdims9v.jpg",
+        caption: "Joy through movement",
+        category: "Dance"
+    },
+    {
+        id: 44,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528200/content_blog_inner_34FBEBC4_hmz8tl.png",
+        caption: "Joy through movement",
+        category: "Aerobics"
+    },
+    {
+        id: 20,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/CoogocpDaDI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770389813/Harmony_Studio/li8wmbymkl6ax1h0blal.jpg",
+        caption: "Fun in motion",
+        category: "Dances"
+    },
+    {
+        id: 21,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C4zgqieNAfn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770390099/Harmony_Studio/ws7o8yj7cvya7ktc7uxr.jpg",
+        caption: "Together we celebrate",
+        category: "Celebration"
+    },
+    {
+        id: 22,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/C8EFW9pRFKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770390710/Harmony_Studio/bcfkdbexc14eordz53xk.jpg",
+        caption: "Dance floor magic",
+        category: "Dance"
+    },
+    {
+        id: 36,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770525991/Harmony_Studio/xwb9wofbqmttnnyo7wr8.jpg",
+        caption: "Energy in every move",
+        category: "Dance"
+    },
 
+    {
+        id: 39,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770526559/Harmony_Studio/adgyomg0bz8bcrzrv5wa.jpg",
+        caption: "Movement with passion",
+        category: "Dance"
+    },
+    {
+        id: 40,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770526892/Harmony_Studio/ruw6owp785cmsjoisrg5.jpg",
+        caption: "Finding calm within",
+        category: "Yoga"
+    },
+    {
+        id: 41,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770527293/Harmony_Studio/i6rfjua1y2glryph9wzp.jpg",
+        caption: "Balance, breath, and flow",
+        category: "Yoga"
+    },
+    {
+        id: 42,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770527502/Harmony_Studio/rncnokdauz0s9i49ht6g.jpg",
+        caption: "Dancing with confidence",
+        category: "Dance"
+    },
 
-//   IMAGES OF GALLERY
-{
-    id: 1,
-    type: "image",
-    category: "Yoga",
-    src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
-    caption: "Morning Yoga Session",
-  },
-{
-    id: 3,
-    type: "image",
-    category: "Dance",
-    src: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=1200",
-    caption: "Dance Practice Hall",
-  },
-{
-    id: 4,
-    type: "image",
-    category: "Yoga",
-    src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800",
-    caption: "Sunset Meditation",
-  },
-{
-    id: 6,
-    type: "image",
-    category: "General",
-    src: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=1200",
-    caption: "Studio Ambiance",
-  },
-  {
-    id: 7,
-    type: "image",
-    category: "Yoga",
-    src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1200",
-    caption: "Mindful Breathing",
-  },
-  {
-    id: 9,
-    type: "image",
-    category: "General",
-    src: "https://images.unsplash.com/photo-1485727749690-d091e8284ef3?auto=format&fit=crop&q=80&w=1200",
-    caption: "Reception & Lounge",
-  },
-//     {
-//     id: 12,
-//     type: "image",
-//     category: "Dance",
-//     src: "https://images.unsplash.com/photo-1520394584497-371f607e37c6?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Hip Hop Vibes",
-//   },
-//    {
-//     id: 14,
-//     type: "image",
-//     category: "Aerobics",
-//     src: "https://images.unsplash.com/photo-1520394584497-371f607e37c6?auto=format&fit=crop&q=80&w=1200",
-//     caption: "Aerobics Workout",
-//   },
-
-//   VIDEOS FOR GALLLERY
-//   {
-//     id: 2,
-//     type: "video",
-//     category: "Zumba",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769409748/video1_jktj2k.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Zumba Energy Hour",
-//   },
-//   {
-//     id: 5,
-//     type: "video",
-//     category: "Dance",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769407789/video6_lxio2h.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Contemporary Flow",
-//   },
-//   {
-//     id: 8,
-//     type: "video",
-//     category: "Dance",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769407804/video9_thwykq.mp4",
-//     thumbnailTime: 5.5,
-//     caption: "Studio Fun Day",
-//   },
-//   {
-//     id: 10,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/v1769407864/video4_sjpmbb.mp4",
-//     thumbnailTime: 2.3,
-//     caption: "Warrior Pose Mastery",
-//   },
-//   {
-//     id: 11,
-//     type: "video",
-//     category: "Aerobics",
-//     src: "https://www.instagram.com/reel/DT5kiLuCMep/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-//     thumbnailTime: 2.5,
-//     caption: "Aerobics Boot Camp",
-//   },
-//   {
-//     id: 13,
-//     type: "video",
-//     category: "Cultural",
-//     src: "/videos/cultural-event.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Cultural Celebration Night",
-//   },
-//   {
-//     id: 15,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/indoor_yoga_class_2_ac4uz1.mp4",
-//     thumbnailTime: 2.3,
-//     caption: "Partner Yoga Flow Session",
-//   },
-//   {
-//     id: 16,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/indoor_yoga_lcpns2.mp4",
-//     thumbnailTime: 4.5,
-//     caption: "Partner Yoga Flow Session",
-//   },
-//   {
-//     id: 17,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/indoor_yoga_class_3_uitiku.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Indoor Yoga Flow Session",
-//   },
-//   {
-//     id: 18,
-//     type: "video",
-//     category: "Yoga",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/Indoor_Partner_Yoga_l3axqq.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Partner Yoga Session",
-//   },
-//   {
-//     id: 19,
-//     type: "video",
-//     category: "Dance",
-//     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/outdoor_dance_2_akcqas.mp4",
-//     thumbnailTime: 2.5,
-//     caption: "Outdoor Dance Session",
-//   },
+    {
+        id: 45,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528178/5c497009685b4a3eab05213d_1548316681268_w3pyfd.jpg",
+        caption: "Joy through movement",
+        category: "Aerobics"
+    },
+    {
+        id: 46,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528125/2d848b6cdb88902a77b75e8412c1ae9d_appc7i.jpg",
+        caption: "Joy through movement",
+        category: "Aerobics"
+    },
+    {
+        id: 23,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DEb-bbGNqlk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770390861/Harmony_Studio/fpnmnkd5j6kkm7xuq9gh.jpg",
+        caption: "Calm focused flow",
+        category: "Yoga"
+    },
+    {
+        id: 24,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DGkiU61yoCB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770391010/Harmony_Studio/u0g6nka199e07gi7gjpx.jpg",
+        caption: "Expression through dance",
+        category: "Dance"
+    },
+    {
+        id: 25,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DHDTr0-NeAU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392353/Harmony_Studio/i6ts6tjdfrx1jygemvkd.jpg",
+        caption: "Move with confidence",
+        category: "Dance"
+    },
+    {
+        id: 26,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DL92FwgobQO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392419/Harmony_Studio/maavjjmjt18uz2ck6cxj.jpg",
+        caption: "Rhythm meets passion",
+        category: "Dance"
+    },
+    {
+        id: 27,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DO5MvQMiK2B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392613/Harmony_Studio/ipgne6qiszkjoxljwmib.jpg",
+        caption: "Graceful dance moments",
+        category: "Dance"
+    },
+    {
+        id: 28,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DPTMqPhjOqm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392708/Harmony_Studio/urwexfocevjvw3oilb4h.jpg",
+        caption: "Feel every beat",
+        category: "Dance"
+    },
+    {
+        id: 29,
+        type: "instagram",
+        url: "https://www.instagram.com/reel/Co7nNudjINk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392812/Harmony_Studio/hzlrcihvmjj4c0hnir8l.jpg",
+        caption: "Stretch breathe relax",
+        category: "Yoga"
+    },
+    // VIDEOS OF GALLERY
+    //   {
+    //     id: 19,
+    //     type: "video",
+    //     category: "Dance",
+    //     src: "https://res.cloudinary.com/dg4ie90zk/video/upload/outdoor_dance_2_akcqas.mp4",
+    //     thumbnailTime: 2.5,
+    //     caption: "Outdoor Dance Session",
+    //   },
 ];

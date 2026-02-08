@@ -281,6 +281,10 @@ const HomePage = () => {
             <Link
               to="/contact"
               className="bg-transparent text-black border-2 border-black px-8! py-4! rounded-full font-bold hover:bg-black hover:text-white transition-all"
+              state={{
+                message:
+                  "I want to book a trial. I'm interested in exploring the studio or classes.",
+              }}
             >
               Book Free Trial
             </Link>
