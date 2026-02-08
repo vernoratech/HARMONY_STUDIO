@@ -2,7 +2,7 @@ import PolicyLayout from "../components/layout/PolicyLayout";
 
 const CookiePolicy = () => {
   return (
-    <PolicyLayout title="Cookie Policy" lastUpdated="March 2026">
+    <PolicyLayout title="Cookie Policy" lastUpdated="February 2026">
       <p>
         Harmony Studio uses cookies to improve website functionality and user
         experience.

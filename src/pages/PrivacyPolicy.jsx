@@ -2,7 +2,7 @@ import PolicyLayout from "../components/layout/PolicyLayout";
 
 const PrivacyPolicy = () => {
   return (
-    <PolicyLayout title="Privacy Policy" lastUpdated="March 2026">
+    <PolicyLayout title="Privacy Policy" lastUpdated="February 2026">
       <p>
         Harmony Studio respects your privacy and is committed to protecting the
         personal information you share with us through our website,

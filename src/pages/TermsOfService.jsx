@@ -2,7 +2,7 @@ import PolicyLayout from "../components/layout/PolicyLayout";
 
 const TermsOfService = () => {
   return (
-    <PolicyLayout title="Terms of Service" lastUpdated="March 2026">
+    <PolicyLayout title="Terms of Service" lastUpdated="February 2026">
       <p>
         By accessing harmonystudio.co.in, you agree to comply with these Terms of
         Service.

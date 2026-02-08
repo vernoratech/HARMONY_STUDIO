@@ -203,7 +203,8 @@ const ServiceDetailPage = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center !mb-8">
                         <Link
                             to="/contact"
-                            state={{ service: service.id }} 
+                            state={{ service: service.id,message:
+                  "I want to book a trial. I'm interested in exploring the studio or classes."}} 
                             style={{ borderColor: service.color }}
                             className="btn btn-primary text-lg !bg-black !text-white hover:!bg-gray-900 !border-2 !border-black"
                         >
