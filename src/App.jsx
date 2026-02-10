@@ -19,6 +19,9 @@ import NotFoundPage from "./pages/NotFoundPage";
 import InstructorDetailPage from "./pages/InstructorDetailPage";
 import CookieConsent from "./components/ui/CookieConsent";
 import IntroScreen from "./components/ui/IntroScreen";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -72,14 +75,14 @@ function App() {
                 </PageWrapper>
               }
             />
-            <Route
+            {/* <Route
               path="/schedule"
               element={
                 <PageWrapper>
                   <SchedulePage />
                 </PageWrapper>
               }
-            />
+            /> */}
             <Route
               path="/about"
               element={
@@ -88,14 +91,14 @@ function App() {
                 </PageWrapper>
               }
             />
-            <Route
+            {/* <Route
               path="/pricing"
               element={
                 <PageWrapper>
                   <PricingPage />
                 </PageWrapper>
               }
-            />
+            /> */}
             <Route
               path="/contact"
               element={
@@ -123,6 +126,10 @@ function App() {
 
             {/* 404 Catch-all - Must be last */}
             <Route path="*" element={<NotFoundPage />} />
+
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           </Routes>
         </main>
 

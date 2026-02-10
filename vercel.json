@@ -1,9 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/maintenance.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

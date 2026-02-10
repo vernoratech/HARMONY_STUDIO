@@ -94,7 +94,7 @@ const HomePage = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 animate-float">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 animate-float">
           <span className="text-xs uppercase tracking-widest mb-2!">
             Scroll
           </span>
@@ -119,7 +119,7 @@ const HomePage = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-16!">
+          {/* <div className="text-center mt-16!">
             <Link
               to="/schedule"
               className="btn btn-outline inline-flex items-center"
@@ -127,7 +127,7 @@ const HomePage = () => {
               View Full Schedule
               <ArrowRight size={18} className="ml-2!" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -146,14 +146,14 @@ const HomePage = () => {
                   className="rounded-3xl w-full h-48 object-cover hover-scale border border-white/5"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&q=80&w=600"
+                  src="https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770458626/355429496_553441500330880_6564643484386808839_n_wiemtd.jpg"
                   alt="Zumba Class"
                   className="rounded-3xl w-full h-72 md:h-80 object-cover hover-scale border border-white/5"
                 />
               </div>
               <div className="space-y-4 pt-8!">
                 <img
-                  src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=600"
+                  src="https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770456995/IMG_0370_rgbvpa.jpg"
                   alt="Dance Class"
                   className="rounded-3xl w-full h-72 md:h-80 object-cover hover-scale border border-white/5"
                 />
@@ -185,10 +185,10 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-white mb-2!">
-                      Expert Instructors
+                      Expert Instructor
                     </h4>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      Learn from certified professionals with years of
+                      Learn from certified professional with years of
                       experience and a passion for teaching.
                     </p>
                   </div>
@@ -206,7 +206,7 @@ const HomePage = () => {
                       Flexible Scheduling
                     </h4>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      Over 150 weekly classes from early morning to late evening
+                      Over 30+ weekly classes from early morning to late evening
                       - find your perfect time.
                     </p>
                   </div>
@@ -272,15 +272,19 @@ const HomePage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/pricing"
+              to="/gallery"
               className="bg-black text-white px-8! py-4! rounded-full font-bold hover:bg-gray-900 transition-all inline-flex items-center justify-center"
             >
-              View Membership Plans
+              View Gallery
               <ArrowRight size={18} className="ml-2!" />
             </Link>
             <Link
               to="/contact"
               className="bg-transparent text-black border-2 border-black px-8! py-4! rounded-full font-bold hover:bg-black hover:text-white transition-all"
+              state={{
+                message:
+                  "I want to book a trial. I'm interested in exploring the studio or classes.",
+              }}
             >
               Book Free Trial
             </Link>

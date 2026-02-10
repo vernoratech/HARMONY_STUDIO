@@ -1,10 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Shield, CloudLightning, X, Zap } from 'lucide-react';
+import { Info, CloudLightning, X, Zap } from 'lucide-react';
+import CookiePolicy from '../../pages/CookiePolicy';
 
 const CookieConsent = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isExiting, setIsExiting] = useState(false);
+    const [showPolicy, setShowPolicy] = useState(false);
     const canvasRef = useRef(null);
+
+    useEffect(() => {
+        if (showPolicy) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [showPolicy]);
+
 
     useEffect(() => {
         const consentData = localStorage.getItem('harmony_cookie_consent');
@@ -171,15 +186,29 @@ const CookieConsent = () => {
                         </div>
                     </div>
 
-                    {/* Simple Close Button */}
-                    <button
-                        onClick={() => handleAction('closed')}
-                        disabled={isExiting}
-                        className={`absolute top-4 right-4 transition-colors ${isExiting ? 'text-black/50' : 'text-gray-500 hover:text-[#F5A623]'}`}
-                    >
-                        <X size={20} />
-                    </button>
+                    <div className="absolute top-4 right-4 z-30 flex items-center gap-2 pointer-events-auto">
+                        {/* INFO BUTTON */}
+                        <button
+                            type="button"
+                            onClick={() => setShowPolicy(true)}
+                            disabled={isExiting}
+                            className={`transition-colors touch-manipulation ${isExiting ? 'text-black/50' : 'text-gray-500 hover:text-[#F5A623]'}`}
+                        >
+                            <Info size={18} />
+                        </button>
+
+                        {/* EXISTING CLOSE BUTTON (UNCHANGED) */}
+                        <button
+                            onClick={() => handleAction('closed')}
+                            disabled={isExiting}
+                            className={`transition-colors touch-manipulation ${isExiting ? 'text-black/50' : 'text-gray-500 hover:text-[#F5A623]'}`}
+                        >
+                            <X size={20} />
+                        </button>
+                    </div>
+
                 </div>
+
             </div>
 
             {/* Cinematic Global Animations */}
@@ -218,7 +247,27 @@ const CookieConsent = () => {
                     to { transform: translateY(0); opacity: 1; }
                 }
             `}} />
+
+            {/* COOKIE POLICY MODAL */}
+            {showPolicy && (
+                <div className="fixed inset-0 z-[200] pointer-events-auto bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+                    <div className="relative bg-[#0A0A0A] rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto border border-white/10">
+                        <button
+                            onClick={() => setShowPolicy(false)}
+                            className="absolute top-4 right-4 text-gray-500 hover:text-[#F5A623]"
+                        >
+                            <X size={20} />
+                        </button>
+                        <div className="p-6 md:p-10">
+                            <CookiePolicy />
+                        </div>
+                    </div>
+                </div>
+            )}
+
+
         </div>
+
     );
 };
 

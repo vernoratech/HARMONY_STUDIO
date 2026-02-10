@@ -46,6 +46,7 @@ const ServiceDetailPage = () => {
                         <Link
                             to="/contact"
                             className="btn btn-primary inline-flex items-center text-lg"
+                            state={{ service: service.id }} 
                             style={{ backgroundColor: service.color, color: '#000' }}
                         >
                             Join This Class
@@ -131,7 +132,7 @@ const ServiceDetailPage = () => {
             </section>
 
             {/* SCHEDULE PREVIEW */}
-            <section className="!py-20 bg-[#1A1A1A]">
+            {/* <section className="!py-20 bg-[#1A1A1A]">
                 <div className="container-custom max-w-5xl">
                     <h2 className="text-3xl md:text-4xl font-bold text-white !mb-4 text-center">
                         Weekly Schedule
@@ -178,7 +179,7 @@ const ServiceDetailPage = () => {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FINAL JOIN CTA */}
             <section
@@ -202,17 +203,20 @@ const ServiceDetailPage = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center !mb-8">
                         <Link
                             to="/contact"
+                            state={{ service: service.id,message:
+                  "I want to book a trial. I'm interested in exploring the studio or classes."}} 
+                            style={{ borderColor: service.color }}
                             className="btn btn-primary text-lg !bg-black !text-white hover:!bg-gray-900 !border-2 !border-black"
                         >
                             Book Your First Session
                             <ArrowRight size={20} className="!ml-2" />
                         </Link>
-                        <Link
+                        {/* <Link
                             to="/pricing"
                             className="btn btn-outline text-lg !bg-transparent !border-2 !border-black !text-black hover:!bg-black hover:!text-white"
                         >
                             View Pricing
-                        </Link>
+                        </Link> */}
                     </div>
 
                     <div className="flex flex-wrap justify-center gap-6 text-sm text-black/70">

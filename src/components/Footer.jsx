@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
-  Twitter,
+  Youtube,
   MapPin,
   Phone,
   Mail,
   ArrowRight,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { FOOTER_LINKS, CONTACT_INFO } from "../data";
 import logo from "../assets/logo.png";
 
@@ -48,12 +49,12 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href={CONTACT_INFO.social.facebook}
+                href={CONTACT_INFO.social.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#F5A623] hover:text-black transition-all duration-300"
               >
-                <Facebook size={18} />
+                <FaWhatsapp size={18} />
               </a>
               <a
                 href={CONTACT_INFO.social.instagram}
@@ -64,12 +65,12 @@ const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a
-                href={CONTACT_INFO.social.twitter}
+                href={CONTACT_INFO.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#F5A623] hover:text-black transition-all duration-300"
               >
-                <Twitter size={18} />
+                <Youtube size={18} />
               </a>
             </div>
           </div>
@@ -79,22 +80,27 @@ const Footer = () => {
             <h4 className="text-white font-semibold !mb-6 text-sm uppercase tracking-widest">
               Quick Links
             </h4>
-            <ul className="space-y-4">
+            <ul className="
+  grid grid-cols-3 gap-y-4 gap-x-0
+  md:flex md:flex-col md:space-y-0
+  text-center md:text-left
+">
               {FOOTER_LINKS.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-sm hover:text-[#F5A623] transition-colors flex items-center group"
+                    className="text-sm hover:text-[#F5A623] transition-colors inline-flex items-center justify-center md:justify-start group"
                   >
                     <ArrowRight
                       size={14}
-                      className="!mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#F5A623]"
+                      className="!mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#F5A623] hidden md:inline-block"
                     />
                     {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
+
           </div>
 
           {/* Contact Info */}
@@ -108,7 +114,7 @@ const Footer = () => {
                   size={18}
                   className="!mr-3 !mt-1 text-[#F5A623] shrink-0"
                 />
-                <span className="text-sm">{CONTACT_INFO.address}</span>
+                <span className="text-sm"><div dangerouslySetInnerHTML={{ __html: CONTACT_INFO.address }} /></span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="!mr-3 text-[#F5A623] shrink-0" />
@@ -169,17 +175,19 @@ const Footer = () => {
             <p className="text-xs text-gray-500 font-medium tracking-wide">
               Website made by{" "}
               <a
-                href="https://www.linkedin.com/company/vernoratech/"
+                href="https://www.vernoratech.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#F5A623] transition-all duration-300 font-bold hover:scale-105 inline-block !ml-1"
+                className="font-bold inline-flex items-center hover:scale-105 transition-transform duration-300 !ml-1"
               >
-                VernoraTech
+                <span className="text-[#0039AC]">Vernora</span>
+                <span className="text-[#39A7EB]">Tech</span>
               </a>
+
             </p>
           </div>
           <div className="flex gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-[#F5A623] transition-colors">
+            {/* <a href="/privacy-policy" className="hover:text-[#F5A623] transition-colors">
               Privacy Policy
             </a>
             <a href="#" className="hover:text-[#F5A623] transition-colors">
@@ -187,7 +195,11 @@ const Footer = () => {
             </a>
             <a href="#" className="hover:text-[#F5A623] transition-colors">
               Cookie Policy
-            </a>
+            </a> */}
+            <Link to="/privacy-policy">Privacy Policy</Link>
+<Link to="/terms-of-service">Terms of Service</Link>
+<Link to="/cookie-policy">Cookie Policy</Link>
+
           </div>
         </div>
       </div>
