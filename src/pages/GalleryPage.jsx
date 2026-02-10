@@ -9,7 +9,7 @@ import SEO from "../components/SEO";
 const GalleryPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const categories = ["All", "Yoga", "Dance", "Zumba", "Aerobics", "General"];
+  const categories = ["All", "Yoga", "Dance", "Zumba", "Aerobics","Weight Loss", "Celebration"];
 
   const filteredGallery = useMemo(() => {
     if (activeFilter === "All") return GALLERY;

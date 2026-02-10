@@ -142,7 +142,7 @@ const ContactPage = () => {
         description="Visit Harmony Studio at Wellness Boulevard, Mumbai 400001. Call +91-98765-43210 to book your free dance, yoga, or zumba trial class. Open Mon-Sat, 6 AM - 10 PM."
         keywords="contact harmony studio Mumbai, book dance class Mumbai, yoga class booking, zumba trial class, fitness studio location Mumbai, harmony studio phone number, wellness boulevard Mumbai"
         canonical="/contact"
-        schema={{
+        schema={{ 
           "@context": "https://schema.org",
           "@type": "ContactPage",
           name: "Contact Harmony Studio Mumbai",
@@ -282,30 +282,23 @@ const ContactPage = () => {
 
                 {/* Map Placeholder */}
                 <a
-                  href={CONTACT_INFO.googleMaps}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#1A1A1A] rounded-2xl overflow-hidden h-64 relative border border-white/10 block group/map hover:border-[#F5A623]/50 transition-all"
-                >
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                    <div className="text-center">
-                      <MapPin
-                        size={48}
-                        className="mx-auto !mb-4 text-[#F5A623]/50 group-hover:text-[#F5A623] group-hover:scale-110 transition-all"
-                      />
-                      <p className="text-white font-medium">
-                        View Interactive Map
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: CONTACT_INFO.address,
-                          }}
-                        />
-                      </p>
-                    </div>
-                  </div>
-                </a>
+  href={CONTACT_INFO.googleMaps}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#1A1A1A] rounded-2xl overflow-hidden h-64 relative border border-white/10 block group/map hover:border-[#F5A623]/50 transition-all"
+>
+  {/* Google Map Embed */}
+  <iframe
+    src={CONTACT_INFO.googleMapsEmbed}
+    className="absolute inset-0 w-full h-full border-0 pointer-events-none"
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+
+  {/* Overlay (optional but keeps design vibe) */}
+  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/map:opacity-100 transition-opacity" />
+</a>
+
               </div>
 
               {/* Contact Form */}

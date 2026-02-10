@@ -174,7 +174,98 @@ export const SERVICES = [
             { day: 'Friday', time: '5:00 PM', class: 'Interval Circuit', level: 'Advanced' },
             { day: 'Saturday', time: '9:00 AM', class: 'Weekend Blast', level: 'All Levels' }
         ]
-    }
+    },
+ {
+  id: 'weightloss',
+  slug: 'weight-loss',
+  title: 'Weight Loss',
+  tagline: 'Burn Fat. Build Energy.',
+  description: 'A holistic weight loss program that combines movement, consistency, and motivation. Designed to help you burn calories, improve stamina, and feel lighter—both physically and mentally.',
+  image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss5_kluo1l.jpg',
+  heroImage: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss5_kluo1l.jpg',
+  features: ['Fat Burn Workouts', 'HIIT Sessions', 'Cardio Dance', 'Core Training', 'Flexibility'],
+  color: '#f28b54',
+
+  deepExplanation: {
+    intro: "Our weight loss program focuses on sustainable results, not quick fixes. Each session starts with a dynamic warm-up, followed by calorie-burning exercises designed to activate your entire body.",
+    experience: "Expect high-energy music, guided movements, and trainers who motivate without intimidation. Classes are fun, sweat-filled, and structured so you burn fat while enjoying the process.",
+    level: "Perfect for beginners and intermediates. Movements are scalable, so you progress at your own pace while still challenging yourself."
+  },
+
+  whoItsFor: [
+    { persona: 'Busy Professionals', description: 'Short, effective workouts that fit your schedule.' },
+    { persona: 'Weight Loss Starters', description: 'If you’re beginning your fitness journey, this is ideal.' },
+    { persona: 'Consistency Seekers', description: 'Structured programs that help you stay regular.' },
+    { persona: 'Energy Boosters', description: 'Feel more active, lighter, and confident.' }
+  ],
+
+  whoItsNotFor:
+    "If you’re looking for bodybuilding or heavy lifting only, this program isn’t the right match.",
+
+  benefits: [
+    { category: 'Physical', title: 'Fat Reduction', description: 'Burn calories efficiently and consistently' },
+    { category: 'Physical', title: 'Improved Stamina', description: 'Increase endurance and daily energy levels' },
+    { category: 'Mental', title: 'Stress Reduction', description: 'Workouts that clear your mind' },
+    { category: 'Mental', title: 'Motivation Boost', description: 'Stay inspired with guided sessions' },
+    { category: 'Lifestyle', title: 'Healthy Routine', description: 'Build long-term fitness habits' },
+    { category: 'Lifestyle', title: 'Confidence Gain', description: 'See and feel visible progress' }
+  ],
+
+  schedulePreview: [
+    { day: 'Monday', time: '6:00 AM', class: 'HIIT Burn', level: 'All Levels' },
+    { day: 'Tuesday', time: '7:00 PM', class: 'Cardio Dance', level: 'Beginner' },
+    { day: 'Wednesday', time: '6:30 AM', class: 'Core & Fat Burn', level: 'Intermediate' },
+    { day: 'Thursday', time: '7:00 PM', class: 'Full Body Burn', level: 'All Levels' },
+    { day: 'Saturday', time: '8:00 AM', class: 'Weekend Fat Loss', level: 'All Levels' }
+  ]
+},
+{
+  id: 'weighttraining',
+  slug: 'weight-training',
+  title: 'Weight Training',
+  tagline: 'Strength Builds Confidence',
+  description: 'A structured strength training program focused on muscle building, body toning, and functional fitness. Learn proper techniques while getting stronger every week.',
+  image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770701508/some-forms-of-resistance-training-include-squats--weight-lifting--glute-bridge-and-push-ups-photo-courtesy-getty-images-074619-1x1.png_pcvuvs.jpg',
+  heroImage: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770701508/some-forms-of-resistance-training-include-squats--weight-lifting--glute-bridge-and-push-ups-photo-courtesy-getty-images-074619-1x1.png_pcvuvs.jpg',
+  features: ['Strength Training', 'Muscle Toning', 'Free Weights', 'Functional Training', 'Form Coaching'],
+  color: '#5b7c99',
+
+  deepExplanation: {
+    intro: "Weight training isn’t about bulk—it’s about strength, balance, and control. Sessions begin with mobility drills and progress into resistance-based exercises using dumbbells and body weight.",
+    experience: "The environment is focused but friendly. Trainers guide your posture, breathing, and movement to prevent injuries and maximize results. Progress is steady and measurable.",
+    level: "Beginners start with light weights and fundamentals. Intermediate and advanced members move into split routines and progressive overload."
+  },
+
+  whoItsFor: [
+    { persona: 'Strength Beginners', description: 'Learn lifting safely from day one.' },
+    { persona: 'Body Toning Goals', description: 'Shape and define your physique.' },
+    { persona: 'Athletic Improvers', description: 'Boost overall performance and power.' },
+    { persona: 'Confidence Builders', description: 'Feel strong inside and out.' }
+  ],
+
+  whoItsNotFor:
+    "If you’re only looking for cardio-based workouts or dance-focused sessions, this may not suit you.",
+
+  benefits: [
+    { category: 'Physical', title: 'Muscle Strength', description: 'Build lean and functional muscle' },
+    { category: 'Physical', title: 'Bone Density', description: 'Support long-term joint and bone health' },
+    { category: 'Mental', title: 'Mental Toughness', description: 'Develop discipline and focus' },
+    { category: 'Mental', title: 'Confidence Growth', description: 'Strength reflects in mindset' },
+    { category: 'Lifestyle', title: 'Better Posture', description: 'Improve alignment and balance' },
+    { category: 'Lifestyle', title: 'Metabolic Boost', description: 'Burn more calories even at rest' }
+  ],
+
+  schedulePreview: [
+    { day: 'Monday', time: '7:00 AM', class: 'Upper Body Strength', level: 'Beginner' },
+    { day: 'Tuesday', time: '6:00 PM', class: 'Lower Body Training', level: 'Intermediate' },
+    { day: 'Thursday', time: '7:00 AM', class: 'Full Body Strength', level: 'All Levels' },
+    { day: 'Friday', time: '6:30 PM', class: 'Core & Conditioning', level: 'All Levels' },
+    { day: 'Saturday', time: '9:00 AM', class: 'Strength Workshop', level: 'Intermediate' }
+  ]
+}
+
+
+
 ];
 
 // Instructors Data
@@ -412,7 +503,7 @@ export const NAV_LINKS = [
     // { name: 'Pricing', path: '/pricing' },
     { name: 'Contact', path: '/contact' }
 ];
-
+{/* <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw" type="text/javascript"></script> */}
 // Footer Links
 export const FOOTER_LINKS = [
     { name: 'Home', path: '/' },
@@ -427,10 +518,13 @@ export const FOOTER_LINKS = [
 // Contact Info
 export const CONTACT_INFO = {
     address: 'Building No. 137, Shop no 03 Shripastha Complex, 2<sup>nd</sup> Road, Nallasopara(W), Maharashtra 401203.',
-    googleMaps: 'https://maps.app.goo.gl/Vt6zyfFaRzYg8mKL8',
+    googleMaps: 'https://maps.app.goo.gl/NhRZVmiLD5eKbqNr7?g_st=aw',
+    googleMapsEmbed:
+    "https://maps.google.com/maps?q=19.421955,72.809553&z=17&output=embed",
     phone: '+91 9021953157',
     email: 'harmonystudio1997@gmail.com',
     hours: {
+
         weekdays: '7:00 AM - 12:00 AM',
         weekends: false ? '7:00 AM - 8:00 PM' : 'No Classes on Weekends'
     },
@@ -574,7 +668,7 @@ export const GALLERY = [
         id: 47,
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528090/aero_j3dgc2.jpg",
-        caption: "Joy through movement",
+        caption: "Where fitness meets fun",
         category: "Aerobics"
     },
     {
@@ -747,6 +841,14 @@ export const GALLERY = [
         caption: "High energy moves",
         category: "Zumba"
     },
+    //one image
+     {
+        id:48 ,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss7_yi6pvg.jpg",
+        caption: "Sweat today, stronger tomorrow",
+        category: "Weight Loss"
+    },
     {
         id: 19,
         type: "instagram",
@@ -766,7 +868,7 @@ export const GALLERY = [
         id: 44,
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528200/content_blog_inner_34FBEBC4_hmz8tl.png",
-        caption: "Joy through movement",
+        caption: "Smiles, sweat, and strong hearts",
         category: "Aerobics"
     },
     {
@@ -776,6 +878,14 @@ export const GALLERY = [
         thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770389813/Harmony_Studio/li8wmbymkl6ax1h0blal.jpg",
         caption: "Fun in motion",
         category: "Dances"
+    },
+    //one image
+      {
+        id:49,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss6_vti9hg.jpg",
+        caption: "Burn calories, boost confidence",
+        category: "Weight Loss"
     },
     {
         id: 21,
@@ -834,14 +944,14 @@ export const GALLERY = [
         id: 45,
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528178/5c497009685b4a3eab05213d_1548316681268_w3pyfd.jpg",
-        caption: "Joy through movement",
+        caption: "Cardio that feels like celebration",
         category: "Aerobics"
     },
     {
         id: 46,
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770528125/2d848b6cdb88902a77b75e8412c1ae9d_appc7i.jpg",
-        caption: "Joy through movement",
+        caption: "Move happy, live healthy",
         category: "Aerobics"
     },
     {
@@ -860,6 +970,21 @@ export const GALLERY = [
         caption: "Expression through dance",
         category: "Dance"
     },
+    //Two image
+      {
+        id:50,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss2_cs0shv.jpg",
+        caption: "Every move counts",
+        category: "Weight Loss"
+    },
+      {
+        id:51,
+        type: "image",
+       src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss5_kluo1l.jpg",
+        caption: "Where energy meets results",
+        category: "Weight Loss"
+    },
     {
         id: 25,
         type: "instagram",
@@ -876,6 +1001,14 @@ export const GALLERY = [
         caption: "Rhythm meets passion",
         category: "Dance"
     },
+    //one image
+     {
+        id:52,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700775/weightloss1_xb11zl.jpg",
+        caption: "Turn effort into transformation",
+        category: "Weight Loss"
+    },
     {
         id: 27,
         type: "instagram",
@@ -891,6 +1024,21 @@ export const GALLERY = [
         thumbnail: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770392708/Harmony_Studio/urwexfocevjvw3oilb4h.jpg",
         caption: "Feel every beat",
         category: "Dance"
+    },
+    //two image
+         {
+        id:53,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700775/weightloss3_xfpk6g.jpg",
+        caption: "High energy moves",
+        category: "Weight Loss"
+    },
+         {
+        id:54,
+        type: "image",
+        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss4_zq6mso.jpg",
+        caption: "High intensity, higher motivation",
+        category: "Weight Loss"
     },
     {
         id: 29,
