@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { GALLERY } from "../data";
+import { GALLERY, ACTIONSHOT } from "../data";
 import GalleryItem from "../components/ui/GalleryItem";
 import SectionHeading from "../components/ui/SectionHeading";
 import SEO from "../components/SEO";
@@ -64,7 +65,7 @@ const GalleryPage = () => {
         <section className="!py-24 bg-[#0A0A0A]">
           <div className="container-custom">
             <div className="flex flex-wrap justify-center gap-4 !mb-16">
-              {CATEGORIES.map((cat) => (
+              {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveFilter(cat)}
