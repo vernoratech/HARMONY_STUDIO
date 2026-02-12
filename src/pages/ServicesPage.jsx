@@ -13,7 +13,7 @@ const ServicesPage = () => {
       const el = document.querySelector(hash);
       if (el) {
         setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
+          el.scrollIntoView({ behavior: "smooth" })
         }, 100);
       }
     }
@@ -123,7 +123,7 @@ const ServicesPage = () => {
                     </p>
 
                     {/* Features Grid */}
-                    <div className="grid grid-cols-2 gap-4 !mb-10">
+                    {/* <div className="grid grid-cols-2 gap-4 !mb-10">
                       {service.features.map((feature) => (
                         <div
                           key={feature}
@@ -141,7 +141,7 @@ const ServicesPage = () => {
                           <span className="text-sm">{feature}</span>
                         </div>
                       ))}
-                    </div>
+                    </div> */}
 
                     {/* CTAs */}
                     <div className="flex flex-wrap gap-4">

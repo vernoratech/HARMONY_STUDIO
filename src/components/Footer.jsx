@@ -125,7 +125,7 @@ const Footer = () => {
                   {CONTACT_INFO.phone}
                 </a>
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <Mail size={18} className="!mr-3 text-[#F5A623] shrink-0" />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
@@ -133,7 +133,7 @@ const Footer = () => {
                 >
                   {CONTACT_INFO.email}
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

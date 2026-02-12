@@ -84,13 +84,13 @@ const HomePage = () => {
                   />
                 </Link>
                 <Link to="/gallery">
-                <button className="btn btn-secondary flex items-center justify-center group">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3! group-hover:bg-[#F5A623] group-hover:text-black transition-all">
-                    <Play size={16} fill="currentColor" />
-                  </div>
-                  Watch Studio Tour
-                  
-                </button></Link>
+                  <button className="btn btn-secondary flex items-center justify-center group">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3! group-hover:bg-[#F5A623] group-hover:text-black transition-all">
+                      <Play size={16} fill="currentColor" />
+                    </div>
+                    Watch Studio Tour
+
+                  </button></Link>
               </div>
 
               {/* Stats Row */}

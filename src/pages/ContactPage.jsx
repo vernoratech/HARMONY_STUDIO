@@ -242,7 +242,7 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start group">
+                  {/* <div className="flex items-start group">
                     <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center !mr-6 shrink-0 group-hover:bg-[#F5A623] transition-colors">
                       <Mail
                         size={24}
@@ -258,7 +258,7 @@ const ContactPage = () => {
                         {CONTACT_INFO.email}
                       </a>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start group">
                     <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center !mr-6 shrink-0 group-hover:bg-[#F5A623] transition-colors">

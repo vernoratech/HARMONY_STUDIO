@@ -9,7 +9,7 @@ import SEO from "../components/SEO";
 const GalleryPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const categories = ["All", "Yoga", "Dance", "Zumba", "Aerobics","Weight Loss", "Celebration"];
+  const categories = ["All", "Yoga", "Dance", "Zumba", "Aerobics","Weight Loss Programme", "Celebration"];
 
   const filteredGallery = useMemo(() => {
     if (activeFilter === "All") return GALLERY;
@@ -261,7 +261,7 @@ const GalleryPage = () => {
                       01
                     </div>
                     <div className="text-gray-500 text-xs uppercase tracking-widest">
-                      Premium Studios
+                      Premium Studio
                     </div>
                   </div>
                 </div>

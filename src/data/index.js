@@ -178,7 +178,7 @@ export const SERVICES = [
  {
   id: 'weightloss',
   slug: 'weight-loss',
-  title: 'Weight Loss',
+  title: 'Weight Loss Programme',
   tagline: 'Burn Fat. Build Energy.',
   description: 'A holistic weight loss program that combines movement, consistency, and motivation. Designed to help you burn calories, improve stamina, and feel lighter—both physically and mentally.',
   image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss5_kluo1l.jpg',
@@ -225,8 +225,8 @@ export const SERVICES = [
   title: 'Weight Training',
   tagline: 'Strength Builds Confidence',
   description: 'A structured strength training program focused on muscle building, body toning, and functional fitness. Learn proper techniques while getting stronger every week.',
-  image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770701508/some-forms-of-resistance-training-include-squats--weight-lifting--glute-bridge-and-push-ups-photo-courtesy-getty-images-074619-1x1.png_pcvuvs.jpg',
-  heroImage: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770701508/some-forms-of-resistance-training-include-squats--weight-lifting--glute-bridge-and-push-ups-photo-courtesy-getty-images-074619-1x1.png_pcvuvs.jpg',
+  image: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770904844/weighttraining_orj1tb.jpg',
+  heroImage: 'https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770904844/weighttraining_orj1tb.jpg',
   features: ['Strength Training', 'Muscle Toning', 'Free Weights', 'Functional Training', 'Form Coaching'],
   color: '#5b7c99',
 
@@ -522,10 +522,10 @@ export const CONTACT_INFO = {
     googleMapsEmbed:
     "https://maps.google.com/maps?q=19.421955,72.809553&z=17&output=embed",
     phone: '+91 9021953157',
-    email: 'harmonystudio1997@gmail.com',
+    // email: 'harmonystudio1997@gmail.com',
     hours: {
 
-        weekdays: '7:00 AM - 12:00 AM',
+        weekdays: '7:00 AM - 9:00 PM',
         weekends: false ? '7:00 AM - 8:00 PM' : 'No Classes on Weekends'
     },
     social: {
@@ -885,7 +885,7 @@ export const GALLERY = [
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss6_vti9hg.jpg",
         caption: "Burn calories, boost confidence",
-        category: "Weight Loss"
+        category: "Weight Loss Programme"
     },
     {
         id: 21,
@@ -976,14 +976,14 @@ export const GALLERY = [
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss2_cs0shv.jpg",
         caption: "Every move counts",
-        category: "Weight Loss"
+        category: "Weight Loss Programme"
     },
       {
         id:51,
         type: "image",
        src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss5_kluo1l.jpg",
         caption: "Where energy meets results",
-        category: "Weight Loss"
+        category: "Weight Loss Programme"
     },
     {
         id: 25,
@@ -1007,7 +1007,7 @@ export const GALLERY = [
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700775/weightloss1_xb11zl.jpg",
         caption: "Turn effort into transformation",
-        category: "Weight Loss"
+        category: "Weight Loss Programme"
     },
     {
         id: 27,
@@ -1031,14 +1031,14 @@ export const GALLERY = [
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700775/weightloss3_xfpk6g.jpg",
         caption: "High energy moves",
-        category: "Weight Loss"
+        category: "Weight Loss Programme"
     },
          {
         id:54,
         type: "image",
         src: "https://res.cloudinary.com/dtgbaw1ul/image/upload/v1770700774/weightloss4_zq6mso.jpg",
         caption: "High intensity, higher motivation",
-        category: "Weight Loss"
+        category: "Weight Loss Programme"
     },
     {
         id: 29,
